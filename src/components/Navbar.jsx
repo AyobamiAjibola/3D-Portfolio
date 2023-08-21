@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-
+import { saveAs } from "file-saver";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
-import { logo, menu, close } from "../assets";
+import { aylogo, menu, close, github, linkedIn } from "../assets";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -25,6 +24,18 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const saveFile = () => {
+    try {
+
+      saveAs(
+        "assets/cv.pdf",
+        "Ayobami's CV"
+      );
+    } catch (error) {
+      alert(error)
+    }
+  };
+
   return (
     <nav
       className={`${
@@ -34,22 +45,50 @@ const Navbar = () => {
       }`}
     >
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
-        <Link
-          to='/'
+        <div
+          // to='/'
           className='flex items-center gap-2'
-          onClick={() => {
-            setActive("");
-            window.scrollTo(0, 0);
-          }}
         >
-          <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
-          <p className='text-white text-[18px] font-bold cursor-pointer flex '>
-            Adrian &nbsp;
-            <span className='sm:block hidden'> | JavaScript Mastery</span>
+          <img
+            src={aylogo} alt='logo' 
+            className='w-9 h-9 object-contain cursor-pointer'
+            onClick={() => {
+              setActive("");
+              window.scrollTo(0, 0);
+            }}
+          />
+          <p className='text-white text-[18px] font-bold flex'>
+            Ayobami &nbsp;
+            <span className='md:block hidden text-[#915EFF]'> | Software Developer</span>
           </p>
-        </Link>
+          <button
+            className="border border-[#915EFF] md:ml-[3rem] xs:ml-[1rem]
+            rounded-lg
+            py-1.5 px-3
+            w-28
+            font-semibold
+            cursor-pointer
+            text-xs
+            text-[#915EFF]
+            hover:text-white hover:bg-[#915EFF] hover:font-semibold"
+            onClick={saveFile}
+          >
+            Download CV
+          </button>
+          <img
+            src={github} alt='logo'
+            className='w-9 h-9 object-contain ml-[1.5rem] cursor-pointer md:block hidden'
+            onClick={() => window.open("https://github.com/AyobamiAjibola", "_blank")}
+          />
+          <img
+            src={linkedIn} alt='logo'
+            className='w-10 h-10 object-contain ml-[1.5rem] cursor-pointer md:block hidden'
+            onClick={() => window.open("https://linkedin.com/in/ayobamiajibola", "_blank")}
+          />
+          
+        </div>
 
-        <ul className='list-none hidden sm:flex flex-row gap-10'>
+        <ul className='list-none hidden md:flex flex-row gap-10'>
           {navLinks.map((nav) => (
             <li
               key={nav.id}
@@ -63,7 +102,7 @@ const Navbar = () => {
           ))}
         </ul>
 
-        <div className='sm:hidden flex flex-1 justify-end items-center'>
+        <div className='md:hidden flex flex-1 justify-end items-center'>
           <img
             src={toggle ? close : menu}
             alt='menu'

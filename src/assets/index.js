@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+import aylogo from "./aylogo.svg";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -19,7 +19,7 @@ import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.svg";
+import threejs from "./tech/threejs.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -30,8 +30,28 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
+import jiffix from './jiffix.svg';
+import amobi from './amobi.png';
+import zues from './zues-logo.png';
+import tiklog from './tiklog.png';
+import rabbit from './rabbit.png';
+import psql from './postgresql.png';
+import mui from './tech/mui.png';
+import redis from './tech/redis.png';
+import zues_project from './zues_project.png';
+import web_logo from './web_logo.png';
+import tiklog_project from './tiklog_project.png';
+import jiffix_customer from './jiffix_customer.png';
+import jiffix_workshop from './jiffix_workshop.png';
+import esun from './esun.png';
+import kweekbuy from './kweekbuy.png';
+import linkedIn from './linkedIn.png';
+import cv from './cv.pdf';
+
 export {
-  logo,
+  aylogo,
+  cv,
+  linkedIn,
   backend,
   creator,
   mobile,
@@ -59,4 +79,19 @@ export {
   carrent,
   jobit,
   tripguide,
+  jiffix,
+  amobi,
+  zues,
+  tiklog,
+  rabbit,
+  psql,
+  mui,
+  redis,
+  zues_project,
+  web_logo,
+  tiklog_project,
+  jiffix_customer,
+  jiffix_workshop,
+  esun,
+  kweekbuy
 };
