@@ -23,8 +23,8 @@ const Hero = () => {
               Hi, I'm <span className='text-[#915EFF]'>Ayobami</span>
             </h1>
             <p className={`${styles.heroSubText2} mt-2 text-white-100`}>
-              I develop web applications, user interfaces, <br className='sm:block hidden' />
-              mobile apps and 3D visuals.
+              I develop web applications, user <br className='sm:block hidden' />
+              interfaces, mobile apps and 3D visuals.
             </p>
           </div>
           <div className="rounded-full bg-secondary overflow-hidden" style={{width: '50%'}}>
