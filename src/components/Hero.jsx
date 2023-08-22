@@ -27,7 +27,7 @@ const Hero = () => {
               mobile apps and 3D visuals.
             </p>
           </div>
-          <div className="rounded-full bg-[#A8AAA8] overflow-hidden" style={{width: '50%'}}>
+          <div className="rounded-full bg-secondary overflow-hidden" style={{width: '50%'}}>
             <img
               src="assets/man.png"
               alt="ay"
