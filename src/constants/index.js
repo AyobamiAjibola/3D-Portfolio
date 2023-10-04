@@ -30,7 +30,9 @@ import {
   jiffix_customer,
   jiffix_workshop,
   esun,
-  kweekbuy
+  hyvepay,
+  kweekbuy,
+  hyve_pay
 } from "../assets";
 
 export const navLinks = [
@@ -133,10 +135,30 @@ const technologies = [
 const experiences = [
   {
     title: "Full Stack Developer",
+    company_name: "Hyvetech Limited - HyvePay",
+    icon: hyvepay,
+    iconBg: "#383E56",
+    date: "September 2023 - In progress",
+    points: [
+      `I developed and implemented a secure and scalable API for bulk transactions from a partner virtual 
+        account to multiple accounts, this enhanced transaction efficiency within the application.`,
+      `Designed and seamlessly integrated the user-friendly front-end interface, enabling users to 
+        initiate and manage multiple transactions effortlessly through the API, resulting in a streamlined 
+        and efficient transaction experience within the application.`,
+      `Developed a versatile API empowering the super admin to efficiently disable and enable user bank 
+        accounts, while also taking charge of designing and implementing the user-friendly UI for seamless 
+        management of these actions within the application.`,
+      `Implemented comprehensive functionality within the admin user dashboard, enabling the efficient 
+        retrieval and tracking of all virtual accounts, their transactions, and complete transaction logs, 
+        facilitating seamless monitoring and management of virtual accounts`
+    ],
+  },
+  {
+    title: "Full Stack Developer",
     company_name: "Zues",
     icon: zues,
     iconBg: "#012D01",
-    date: "July 2023 - September 2023",
+    date: "July 2023 - In progress",
     points: [
       `Created a strong data scraping algorithm to extract user shopping preferences from Jiji and Jumia. 
       Integrated this data into the Zeus app, offering insights into popular products. Vendors can use this 
@@ -176,7 +198,7 @@ const experiences = [
   },
   {
     title: "Full Stack Developer",
-    company_name: "Jiffix Technologies",
+    company_name: "Hyvetech Limited - Autohyve",
     icon: jiffix,
     iconBg: "#383E56",
     date: "January 2023 - June 2023",
@@ -239,6 +261,70 @@ const testimonials = [
 ];
 
 const projects = [
+  {
+    name: "Hyvetech Limited - HyvePay",
+    description:
+      `Boost your auto business with HyvePay, the ultimate banking platform for mechanics, auto shops, and 
+      spare part retailers. Enjoy free, separate business accounts, streamline expense management, and ensure 
+      funds are where you need them. Drive success with HyvePay today!`,
+      tags: [
+        {
+          name: "nodejs",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "reactjs",
+          color: "green-text-gradient",
+        },
+        {
+          name: "redux",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "mui",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "contextApi",
+          color: "green-text-gradient",
+        },
+        {
+          name: "express",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "restapi",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "typescript",
+          color: "green-text-gradient",
+        },
+        {
+          name: "postgresql",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "sequelize",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "aws",
+          color: "green-text-gradient",
+        },
+        {
+          name: "redis",
+          color: "pink-text-gradient"
+        },
+        {
+          name: "rabbitMq",
+          color: "blue-text-gradient"
+        }
+      ],
+    image: hyve_pay,
+    source_code_link: "",
+    web_link: "https://pay.hyvetech.co"
+  },
   {
     name: "ZUES",
     description:
@@ -341,11 +427,11 @@ const projects = [
     web_link: ""
   },
   {
-    name: "Jiffix AutoHyve Customer App",
+    name: "Hyvetech Limited - AutoHyve Customer App",
     description:
       `This project enables users to conveniently access a comprehensive breakdown of 
       parts scheduled for replacement or repair, complete with cost estimates. This 
-      information will be accessible without requiring the download of the Jiffix AutoHyve 
+      information will be accessible without requiring the download of the Hyvetech AutoHyve 
       mobile app. Users can opt to pay a deposit based on provided estimates from the workshop, 
       with the flexibility to finalize payments upon job completion. Additionally, users will 
       have the capability to view vehicles registered under their accounts.`,
@@ -397,6 +483,10 @@ const projects = [
       {
         name: "redis",
         color: "pink-text-gradient"
+      },
+      {
+        name: "rabbitMq",
+        color: "blue-text-gradient"
       }
     ],
     image: jiffix_customer,
@@ -404,9 +494,9 @@ const projects = [
     web_link: "https://app.myautohyve.com/"
   },
   {
-    name: "Jiffix Autohyve Workshop App",
+    name: "Hyvetech Limited - AutoHyve Workshop App",
     description:
-      `Introducing Jiffix Workshop Management System, tailored for Jiffix partners: a robust 
+      `Introducing Hyvetech Workshop Management System, tailored for Hyvetech partners: a robust 
       tool that transforms estimate generation, invoice creation, workshop stock management, 
       vehicle repair reminders, and expense tracking. Designed for dynamic needs, it empowers 
       with analytics for informed decisions. Seamlessly navigate and enhance productivity with 
@@ -460,6 +550,10 @@ const projects = [
         {
           name: "redis",
           color: "pink-text-gradient"
+        },
+        {
+          name: "rabbitMq",
+          color: "blue-text-gradient"
         }
       ],
     image: jiffix_workshop,

@@ -47,8 +47,12 @@ import esun from './esun.png';
 import kweekbuy from './kweekbuy.png';
 import linkedIn from './linkedIn.png';
 import cv from './cv.pdf';
+import hyvepay from './hyvePay.png';
+import hyve_pay from './hyve_pay.png'
 
 export {
+  hyve_pay,
+  hyvepay,
   aylogo,
   cv,
   linkedIn,
