@@ -38,14 +38,14 @@ const ServiceCard = ({ index, title, icon }) => (
 const About = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <motion.div variants={textVariant()} className="mt-5">
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Overview.</h2>
       </motion.div>
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
+        className='md:mt-4 mt-80 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
         I am an adept Full Stack web and React Native mobile app developer. 
         I harness the power of ReactJS, React-Native and NodeJS to engineer 
