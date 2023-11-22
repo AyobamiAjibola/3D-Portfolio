@@ -3,6 +3,7 @@ import { saveAs } from "file-saver";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { aylogo, menu, close, github, linkedIn } from "../assets";
+import pdfFilePath from '../assets/cv/cv.pdf';
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -24,16 +25,13 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const saveFile = () => {
-    try {
-
-      saveAs(
-        "assets/cv.pdf",
-        "Ayobami's CV"
-      );
-    } catch (error) {
-      alert(error)
-    }
+  const handleDownload = () => {
+    const link = document.createElement('a');
+    link.href = pdfFilePath;
+    link.download = 'ayobami_cv.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (
@@ -71,7 +69,7 @@ const Navbar = () => {
             text-xs
             text-[#915EFF]
             hover:text-white hover:bg-[#915EFF] hover:font-semibold"
-            onClick={saveFile}
+            onClick={handleDownload}
           >
             Download CV
           </button>
