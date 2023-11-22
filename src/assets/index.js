@@ -46,15 +46,19 @@ import jiffix_workshop from './jiffix_workshop.png';
 import esun from './esun.png';
 import kweekbuy from './kweekbuy.png';
 import linkedIn from './linkedIn.png';
-import cv from './cv.pdf';
 import hyvepay from './hyvePay.png';
-import hyve_pay from './hyve_pay.png'
+import hyve_pay from './hyve_pay.png';
+import Lynk from './Lynk.png';
+import lynkBg from './lynkBg.png';
+import new_autohyve from './new_autohyve.png';
 
 export {
+  Lynk,
+  new_autohyve,
+  lynkBg,
   hyve_pay,
   hyvepay,
   aylogo,
-  cv,
   linkedIn,
   backend,
   creator,

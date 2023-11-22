@@ -32,7 +32,10 @@ import {
   esun,
   hyvepay,
   kweekbuy,
-  hyve_pay
+  hyve_pay,
+  Lynk,
+  lynkBg,
+  new_autohyve
 } from "../assets";
 
 export const navLinks = [
@@ -134,11 +137,63 @@ const technologies = [
 
 const experiences = [
   {
+    title: "Mobile Developer",
+    company_name: "Lynk",
+    icon: Lynk,
+    iconBg: "#4A1316",
+    date: "October 2023 - In progress",
+    points: [
+      `I Implemented a matching algorithm to send profiles to users based on their preferences.`,
+      `I engineered a robust chat system that seamlessly incorporates Socket.IO and RabbitMQ, enabling 
+        matched users to engage in effective communication through the implemented chat functionality.`,
+      `I utilized RabbitMQ to set up a notification system that triggers instant notifications when a 
+      user likes another user's profile. This seamless communication ensures that the liked user receives 
+      immediate notifications about the interaction.`,
+      `I designed a biometric algorithm that facilitates user login to the application through the 
+        utilization of either fingerprint or facial recognition data registered on their mobile device.`,
+      `I've implemented a role-based system in the backend, enabling a super admin to create additional 
+        users and subsequently assign specific roles and permissions to them.`,
+      `I am in the process of developing a mobile app using React Native, with a focus on seamlessly 
+        integrating backend APIs to ensure a smooth and positive user experience.`,
+      `Additionally, I am working on constructing an admin dashboard that empowers administrators 
+        to oversee all user activities and execute various administrative privileges.`,
+    ],
+  },
+  {
+    title: "Full Stack Developer",
+    company_name: "Hyvetech Limited - Autohyve",
+    icon: jiffix,
+    iconBg: "#383E56",
+    date: "October 2023 - October 2023",
+    points: [
+      `As the individual responsible for migrating Autohyve's infrastructure and codebase to a new AWS account, 
+      I orchestrated the creation and configuration of the account, ensured a seamless transfer of 
+      existing infrastructure components, implemented security measures, established network 
+      configurations, managed the migration of databases with data integrity in mind, successfully 
+      moved the Autohyve codebase while addressing dependencies and configurations, and conducted 
+      comprehensive testing to validate the application's seamless functionality in the new AWS 
+      environment, resolving any issues that arose during the testing phase.`,
+      `As part of the comprehensive migration process, I seamless integration the 
+      frontend codebase into the newly designed user interface (UI). This involved carefully 
+      aligning and adapting the existing frontend code to match the specifications and aesthetics 
+      of the updated UI design. Throughout this migration, emphasis was placed on preserving the 
+      functionality and user experience while incorporating the visual elements and layout defined 
+      in the UI design. Regular collaboration with UI designers ensured a harmonious fusion of 
+      code and design, resulting in a polished and cohesive frontend that aligned precisely with 
+      the envisioned user interface.`,
+      `The updated design introduces individual user sign-up, extending Autohyve's accessibility to 
+      non-workshop owners. With integrated HyvePay, users can seamlessly conduct transactions 
+      without navigating to a separate platform. Both users and workshops can utilize the VIN 
+      checker functionality to easily retrieve vehicle details, enhancing the overall user 
+      experience.`
+    ],
+  },
+  {
     title: "Full Stack Developer",
     company_name: "Hyvetech Limited - HyvePay",
     icon: hyvepay,
     iconBg: "#383E56",
-    date: "September 2023 - In progress",
+    date: "September 2023 - October 2023",
     points: [
       `I developed and implemented a secure and scalable API for bulk transactions from a partner virtual 
         account to multiple accounts, this enhanced transaction efficiency within the application.`,
@@ -193,7 +248,13 @@ const experiences = [
       payments to riders, optimizing the overall payment process and enhancing user satisfaction.`,
       `Developed APIs to support role-based system, granting administrators the ability to seamlessly create users, 
       assign roles, and manage permissions. This functionality enhances user management and security, facilitating 
-      efficient administration of the application.`
+      efficient administration of the application.`,
+      `I leveraged RabbitMQ to establish a notification system facilitating real-time communication between riders 
+      and customers throughout the package delivery process. When a customer initiates a request for a rider, the 
+      rider receives instantaneous notifications, enabling them to respond promptly. This bidirectional communication 
+      continues until the package is successfully delivered to its destination.`,
+      `I engineered a robust chat system that seamlessly incorporates Socket.IO and RabbitMQ, enabling 
+        matched customers and riders to engage in effective communication through the implemented chat functionality.`,
     ],
   },
   {
@@ -262,6 +323,140 @@ const testimonials = [
 
 const projects = [
   {
+    name: "Lynk",
+    description:
+      `Lynk is a mobile application that allows users to match with potential partners based on 
+        preferences and mutual likes. Features include sending and receiving like requests, 
+        mutual like confirmation, and chat functionality. Users can control profile visibility 
+        and subscribe to different categories (Black, Red, Purple) with varying privileges. 
+        The subscription model includes free and paid tiers, each with specific messaging and 
+        calling capabilities. Profile verification is implemented, requiring job details, 
+        profile media, and video verification. The application also enforces specific profile 
+        requirements and initial pending status for all users.`,
+      tags: [
+        {
+          name: "nodejs",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "reactjs",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "react-native",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "rabbitmq",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "socket-io",
+          color: "green-text-gradient",
+        },
+        {
+          name: "express",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "restapi",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "typescript",
+          color: "green-text-gradient",
+        },
+        {
+          name: "mongodb",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "aws",
+          color: "green-text-gradient",
+        },
+        {
+          name: "redis",
+          color: "pink-text-gradient"
+        },
+        {
+          name: "expo",
+          color: "blue-text-gradient"
+        }
+      ],
+    image: lynkBg,
+    source_code_link: "",
+    web_link: "",
+    mobile_link: ""
+  },
+  {
+    name: "Hyvetech Limited - AutoHyve Workshop App",
+    description:
+      `The redesigned Autohyve web app delivers a seamless UI/UX experience with improved speed 
+      and robustness. It introduces a VIN checker for users to easily verify their vehicle details. 
+      Additionally, it features an integrated HyvePay, eliminating the need for workshops to 
+      navigate to a separate platform for monetary transactions. Workshops can efficiently make 
+      on-the-fly payments for expenses by simply approving payments directly within the built-in 
+      HyvePay functionality.`,
+    tags: [
+      {
+        name: "nodejs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "reactjs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "redux",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "mui",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "contextApi",
+        color: "green-text-gradient",
+      },
+      {
+        name: "express",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "restapi",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "postgresql",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "sequelize",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "aws",
+        color: "green-text-gradient",
+      },
+      {
+        name: "redis",
+        color: "pink-text-gradient"
+      },
+      {
+        name: "rabbitMq",
+        color: "blue-text-gradient"
+      }
+    ],
+    image: new_autohyve,
+    source_code_link: "https://github.com/Hyvetech-Limited/autohyve-version-1",
+    web_link: "https://auto.hyvetech.co/",
+    mobile_link: ""
+  },
+  {
     name: "Hyvetech Limited - HyvePay",
     description:
       `Boost your auto business with HyvePay, the ultimate banking platform for mechanics, auto shops, and 
@@ -323,7 +518,8 @@ const projects = [
       ],
     image: hyve_pay,
     source_code_link: "",
-    web_link: "https://pay.hyvetech.co"
+    web_link: "https://pay.hyvetech.co",
+    mobile_link: ""
   },
   {
     name: "ZUES",
@@ -376,7 +572,8 @@ const projects = [
     ],
     image: zues_project,
     source_code_link: "https://github.com/Zues-WebApp/zues-app",
-    web_link: ""
+    web_link: "",
+    mobile_link: ""
   },
   {
     name: "TikLog",
@@ -424,7 +621,8 @@ const projects = [
     ],
     image: tiklog_project,
     source_code_link: "https://github.com/Tiklog-App/Tiklog",
-    web_link: ""
+    web_link: "",
+    mobile_link: ""
   },
   {
     name: "Hyvetech Limited - AutoHyve Customer App",
@@ -491,7 +689,8 @@ const projects = [
     ],
     image: jiffix_customer,
     source_code_link: "https://github.com/Hyvetech-Limited/AutoHyve-web-app",
-    web_link: "https://app.myautohyve.com/"
+    web_link: "https://app.myautohyve.com/",
+    mobile_link: ""
   },
   {
     name: "Hyvetech Limited - AutoHyve Workshop App",
@@ -558,7 +757,8 @@ const projects = [
       ],
     image: jiffix_workshop,
     source_code_link: "https://github.com/Hyvetech-Limited/AutoHyve-pdms-gateway",
-    web_link: "https://pdms.jiffixtech.com/"
+    web_link: "https://pdms.jiffixtech.com/",
+    mobile_link: ""
   },
   {
     name: "Esun Ekiti",
@@ -613,7 +813,8 @@ const projects = [
     ],
     image: esun,
     source_code_link: "https://github.com/AyobamiAjibola/esun-ekiti",
-    web_link: "https://esunekiti.ng/"
+    web_link: "https://esunekiti.ng/",
+    mobile_link: ""
   },
   {
     name: 'KweekBuy',
@@ -644,7 +845,8 @@ const projects = [
     ],
     image: kweekbuy,
     source_code_link: "",
-    web_link: "https://www.kweekbuy.com"
+    web_link: "https://www.kweekbuy.com",
+    mobile_link: ""
   }
 ];
 
