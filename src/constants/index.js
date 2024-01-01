@@ -141,7 +141,7 @@ const experiences = [
     company_name: "Lynk",
     icon: Lynk,
     iconBg: "#4A1316",
-    date: "October 2023 - In progress",
+    date: "October 2023 - December 2023",
     points: [
       `I Implemented a matching algorithm to send profiles to users based on their preferences.`,
       `I engineered a robust chat system that seamlessly incorporates Socket.IO and RabbitMQ, enabling 
@@ -193,7 +193,7 @@ const experiences = [
     company_name: "Hyvetech Limited - HyvePay",
     icon: hyvepay,
     iconBg: "#383E56",
-    date: "September 2023 - October 2023",
+    date: "August 2023 - October 2023",
     points: [
       `I developed and implemented a secure and scalable API for bulk transactions from a partner virtual 
         account to multiple accounts, this enhanced transaction efficiency within the application.`,
@@ -235,7 +235,7 @@ const experiences = [
     company_name: "Tik Logistics",
     icon: tiklog,
     iconBg: "#383E56",
-    date: "June 2023 - August 2023",
+    date: "June 2023 - September 2023",
     points: [
       `Designed and implemented APIs for riders and customers, enabling location-based searches for nearby riders. 
       Utilized RabbitMQ message broker to facilitate real-time notifications to customers. This system streamlined 
@@ -459,9 +459,10 @@ const projects = [
   {
     name: "Hyvetech Limited - HyvePay",
     description:
-      `Boost your auto business with HyvePay, the ultimate banking platform for mechanics, auto shops, and 
-      spare part retailers. Enjoy free, separate business accounts, streamline expense management, and ensure 
-      funds are where you need them. Drive success with HyvePay today!`,
+      `Hyvepay, developed by Hyvetech, stands as a pioneering fintech product. Serving as a preferred banking solution, Hyvepay caters specifically to mechanics, automotive shops, spare part retailers, and individuals seeking a reliable platform for seamless money transfers and receipts.
+      Positioned at the intersection of convenience and innovation, Hyvepay offers a comprehensive suite of financial tools and services. It empowers users within the automotive industry and beyond to efficiently send and receive money, providing a secure and user-friendly experience.
+      Hyvepay's distinct focus on serving mechanics, auto shops, spare part retailers, and individuals highlights its commitment to addressing the specific financial needs of these sectors. By leveraging the Hyvepay platform, users can tap into a modern banking experience tailored to enhance their financial operations.
+      With a foundation built on trust, technological prowess, and a user-centric approach, Hyvepay redefines banking solutions, making financial transactions effortless and empowering businesses and individuals to thrive in a digitally connected world.`,
       tags: [
         {
           name: "nodejs",

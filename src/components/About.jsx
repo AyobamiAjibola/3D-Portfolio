@@ -50,12 +50,11 @@ const About = () => {
         I am an adept Full Stack web and React Native mobile app developer. 
         I harness the power of ReactJS, React-Native and NodeJS to engineer 
         comprehensive frontend and backend solutions for both web-based and mobile 
-        applications. Additionally, I have hands-on experience with Three.js, 
-        enabling me to incorporate captivating 3D visuals into applications. 
-        My approach revolves around leveraging top-notch technologies to enhance 
-        user experiences. Through close collaboration with clients, I am dedicated 
-        to devising efficient, scalable, and user-centric solutions that address 
-        tangible challenges. Let's team up to transform your visions into reality!
+        applications. My approach revolves around leveraging top-notch technologies 
+        to enhance user experiences. Through close collaboration with clients, 
+        I am dedicated to devising efficient, scalable, and user-centric solutions 
+        that address tangible challenges. Let's team up to transform your visions 
+        into reality!
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
