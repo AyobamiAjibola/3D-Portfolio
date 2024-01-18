@@ -153,9 +153,9 @@ const experiences = [
         utilization of either fingerprint or facial recognition data registered on their mobile device.`,
       `I've implemented a role-based system in the backend, enabling a super admin to create additional 
         users and subsequently assign specific roles and permissions to them.`,
-      `I am in the process of developing a mobile app using React Native, with a focus on seamlessly 
+      `I developed a mobile app using React Native, with a focus on seamlessly 
         integrating backend APIs to ensure a smooth and positive user experience.`,
-      `Additionally, I am working on constructing an admin dashboard that empowers administrators 
+      `Additionally, I build an admin dashboard that empowers administrators 
         to oversee all user activities and execute various administrative privileges.`,
     ],
   },
