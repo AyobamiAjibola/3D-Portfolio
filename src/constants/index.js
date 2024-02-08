@@ -35,7 +35,14 @@ import {
   hyve_pay,
   Lynk,
   lynkBg,
-  new_autohyve
+  new_autohyve,
+  sparkle,
+  sparkleBg,
+  docker,
+  expo,
+  nextjs,
+  firebase,
+  storybook
 } from "../assets";
 
 export const navLinks = [
@@ -113,10 +120,14 @@ const technologies = [
     name: "Three JS",
     icon: threejs,
   },
-  // {
-  //   name: "git",
-  //   icon: git,
-  // },
+  {
+    name: "Docker",
+    icon: docker,
+  },
+  {
+    name: "Expo",
+    icon: expo,
+  },
   {
     name: "RabbitMQ",
     icon: rabbit,
@@ -133,9 +144,33 @@ const technologies = [
     name: "Redis",
     icon: redis,
   },
+  {
+    name: "NextJS",
+    icon: nextjs,
+  },
+  {
+    name: "Firebase",
+    icon: firebase,
+  },
+  {
+    name: "Storybook",
+    icon: storybook,
+  },
 ];
 
 const experiences = [
+  {
+    title: "Sparkle Landing Page",
+    company_name: "Sparkle Technologies",
+    icon: sparkle,
+    iconBg: "#383E56",
+    date: "January 2024 - January 2024",
+    points: [
+      `I integrated Firebase Firestore to manage and store the list of users on the waitlist.`,
+      `The website was developed using Next.js as the development framework.`
+      
+    ],
+  },
   {
     title: "Mobile Developer",
     company_name: "Lynk",
@@ -323,6 +358,37 @@ const testimonials = [
 
 const projects = [
   {
+    name: "Sparkles Landing Page",
+    description:
+      `
+      This landing page is designed for Sparkles, a platform focused on gathering information from users interested 
+      in joining their waitlist. Sparkles is a lifestyle product that bridges the gap between users and top-rated
+      businesses as well as skilled independent professionals. It offers a diverse range of services spanning lifestyle, 
+      beauty, wellness, and home care sectors.`,
+      tags: [
+        {
+          name: "reactjs",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "nextjs",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "typescript",
+          color: "green-text-gradient",
+        },
+        {
+          name: "firebase",
+          color: "pink-text-gradient",
+        }
+      ],
+    image: sparkleBg,
+    source_code_link: "https://github.com/AyobamiAjibola/sparkles_landing_page.git",
+    web_link: "https://www.sparkle.com.co/",
+    mobile_link: ""
+  },
+  {
     name: "Lynk",
     description:
       `Lynk is a mobile application that allows users to match with potential partners based on 
@@ -384,7 +450,7 @@ const projects = [
         }
       ],
     image: lynkBg,
-    source_code_link: "",
+    source_code_link: "https://github.com/AyobamiAjibola/Lynk-Dating-Mobile-App.git",
     web_link: "",
     mobile_link: ""
   },
@@ -452,7 +518,7 @@ const projects = [
       }
     ],
     image: new_autohyve,
-    source_code_link: "https://github.com/Hyvetech-Limited/autohyve-version-1",
+    source_code_link: "https://github.com/AyobamiAjibola/Hyvetech-Autohyve-Web-V1.git",
     web_link: "https://auto.hyvetech.co/",
     mobile_link: ""
   },
@@ -518,7 +584,7 @@ const projects = [
         }
       ],
     image: hyve_pay,
-    source_code_link: "",
+    source_code_link: "https://github.com/AyobamiAjibola/Hyvetech-Hyvepay.git",
     web_link: "https://pay.hyvetech.co",
     mobile_link: ""
   },
@@ -572,7 +638,7 @@ const projects = [
       }
     ],
     image: zues_project,
-    source_code_link: "https://github.com/Zues-WebApp/zues-app",
+    source_code_link: "https://github.com/AyobamiAjibola/Zues-WebApp.git",
     web_link: "",
     mobile_link: ""
   },
@@ -621,7 +687,7 @@ const projects = [
       }
     ],
     image: tiklog_project,
-    source_code_link: "https://github.com/Tiklog-App/Tiklog",
+    source_code_link: "https://github.com/AyobamiAjibola/Tiklog-Delivery-App.git",
     web_link: "",
     mobile_link: ""
   },
@@ -757,7 +823,7 @@ const projects = [
         }
       ],
     image: jiffix_workshop,
-    source_code_link: "https://github.com/Hyvetech-Limited/AutoHyve-pdms-gateway",
+    source_code_link: "https://github.com/AyobamiAjibola/Hyvetech-pdms.git",
     web_link: "https://pdms.jiffixtech.com/",
     mobile_link: ""
   },

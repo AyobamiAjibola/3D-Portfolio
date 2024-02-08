@@ -8,7 +8,6 @@ import menu from "./menu.svg";
 import close from "./close.svg";
 
 import css from "./tech/css.png";
-import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
@@ -36,8 +35,8 @@ import zues from './zues-logo.png';
 import tiklog from './tiklog.png';
 import rabbit from './rabbit.png';
 import psql from './postgresql.png';
-import mui from './tech/mui.png';
-import redis from './tech/redis.png';
+import mui from './mui.png';
+import redis from './redis.png';
 import zues_project from './zues_project.png';
 import web_logo from './web_logo.png';
 import tiklog_project from './tiklog_project.png';
@@ -51,8 +50,21 @@ import hyve_pay from './hyve_pay.png';
 import Lynk from './Lynk.png';
 import lynkBg from './lynkBg.png';
 import new_autohyve from './new_autohyve.png';
+import sparkle from './sparkle.png';
+import sparkleBg from './sparkleBg.png';
+import docker from './docker.png';
+import expo from './expo.png';
+import nextjs from './nextjs.png';
+import firebase from './firebase.png';
+import storybook from './storybook.png';
 
 export {
+  sparkle,
+  firebase,
+  storybook,
+  nextjs,
+  expo,
+  sparkleBg,
   Lynk,
   new_autohyve,
   lynkBg,
