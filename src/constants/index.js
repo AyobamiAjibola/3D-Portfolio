@@ -16,7 +16,7 @@ import {
   carrent,
   jobit,
   tripguide,
-  threejs,
+  storybook,
   jiffix,
   amobi,
   zues,
@@ -42,7 +42,15 @@ import {
   expo,
   nextjs,
   firebase,
-  storybook
+  django,
+  python,
+  vue, htmx,
+  debiz,
+  menupk,
+  patient,
+  menupkPage,
+  debizPage,
+  patientPage
 } from "../assets";
 
 export const navLinks = [
@@ -81,14 +89,6 @@ const services = [
 
 const technologies = [
   {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
     name: "JavaScript",
     icon: javascript,
   },
@@ -115,10 +115,6 @@ const technologies = [
   {
     name: "MongoDB",
     icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
   },
   {
     name: "Docker",
@@ -153,15 +149,68 @@ const technologies = [
     icon: firebase,
   },
   {
-    name: "Storybook",
-    icon: storybook,
+    name: "Python",
+    icon: python,
+  },
+  {
+    name: "Django",
+    icon: django,
+  },
+  {
+    name: "VueJS",
+    icon: vue,
+  },
+  {
+    name: "HTMX",
+    icon: htmx,
   },
 ];
 
 const experiences = [
   {
-    title: "Sparkle Landing Page",
-    company_name: "Sparkle Technologies",
+    title: "Senior Software Developer",
+    company_name: "Devsqurepk - Menupk Web App",
+    icon: menupk,
+    iconBg: "#fff",
+    date: "Feb 2024 - Till Date",
+    points: [
+      `I play a pivotal role in the creation of Menu.PK, an innovative platform that allows users to explore and discover a wide variety of menus showcasing authentic flavors from across Pakistan. I designed, developed, and implemented the backend infrastructure, creating robust RESTful APIs that power the web application’s various functionalities, ensuring seamless user experiences and efficient data management.`,
+      `In addition to backend development, I also contribute to building key frontend components, collaborating closely with the design and development teams to create an intuitive and engaging user interface. This involved implementing responsive design principles to ensure a consistent user experience across all devices.`,
+      `To ensure the application's availability, scalability, and security, I configured and managed the cloud infrastructure. This included setting up and maintaining virtual servers, managing storage solutions, and optimizing databases for performance. I also configured networking components to ensure secure and reliable communication between different parts of the application, ultimately leading to a successful deployment of the platform.`
+    ]
+  },
+  {
+    title: "Backend Developer",
+    company_name: "Toverbers - De Business Consult Web App",
+    icon: debiz,
+    iconBg: "#fff",
+    date: "July 2024 - Aug 2024",
+    points: [
+      `Engineered and developed the backend and all relevant APIs.`,
+      `Implemented appointment scheduling with agenda modules, allowing clients to book and receive notifications.`,
+      `Developed in-app chat with Socket.io for real-time communication between clients and admin.`,
+      `Created APIs for clients to submit applications and financial documents for services like bookkeeping, payroll, and financial analysis.`,
+      `To enhance client engagement, I also developed APIs that allow the admin to post blogs, newsletters, and updates, which can be sent to subscribers.`
+    ]
+  },
+  {
+    title: "Full Stack Developer",
+    company_name: "Toverbers - IPatient NG",
+    icon: patient,
+    iconBg: "#fff",
+    date: "May 2024 - June 2024",
+    points: [
+      `Spearheaded the development of the entire application by engineering a robust backend using Node.js and Express. Leveraged Next.js on the frontend to create a seamless, responsive user interface that enhances user experience across devices.`,
+      `Developed and implemented the fundraiser functionality from the ground up. This feature enables users to initiate fundraisers while providing a secure payment gateway for contributors, ensuring the integrity and safety of transactions.`,
+      `Architected and integrated RESTful APIs, facilitating smooth communication between the frontend and backend. Ensured that the APIs were well-documented, scalable, and maintainable for future enhancements.`,
+      `Led the design and development of the frontend, ensuring a cohesive and user-friendly interface. Utilized Next.js to create dynamic and responsive web pages that cater to a wide range of user needs.`,
+      `Integrated the developed APIs with the frontend, ensuring that the application’s features were fully functional and user-friendly. Focused on creating an intuitive user journey, from navigating the platform to completing transactions.`,
+      `Managed the cloud infrastructure, overseeing deployment and hosting on Hostinger. This involved configuring servers, managing databases, and ensuring that the application was scalable to handle growing user demand.`
+    ],
+  },
+  {
+    title: "Front Developer",
+    company_name: "Sparkle Technologies - Sparkle Waitlist Web Page",
     icon: sparkle,
     iconBg: "#383E56",
     date: "January 2024 - January 2024",
@@ -172,8 +221,8 @@ const experiences = [
     ],
   },
   {
-    title: "Mobile Developer",
-    company_name: "Lynk",
+    title: "Backend / Mobile App Developer",
+    company_name: "A'Mobi Ltd - Lynk Mobile App",
     icon: Lynk,
     iconBg: "#4A1316",
     date: "October 2023 - December 2023",
@@ -245,7 +294,7 @@ const experiences = [
   },
   {
     title: "Full Stack Developer",
-    company_name: "Zues",
+    company_name: "A'Mobi Ltd - Zues Web App",
     icon: zues,
     iconBg: "#012D01",
     date: "July 2023 - In progress",
@@ -267,7 +316,7 @@ const experiences = [
   },
   {
     title: "Backend Developer",
-    company_name: "Tik Logistics",
+    company_name: "Toverbers - Tik Logistics Mobile App",
     icon: tiklog,
     iconBg: "#383E56",
     date: "June 2023 - September 2023",
@@ -357,6 +406,169 @@ const testimonials = [
 ];
 
 const projects = [
+  {
+    name: "Menupk",
+    description: `
+      Menu.PK is a Software-as-a-Service (SaaS) platform designed to revolutionize how 
+      restaurants in Pakistan manage their operations and engage with customers. 
+      The platform enables restaurants to seamlessly onboard, manage their menus, 
+      handle customer orders, and streamline their daily operations. Simultaneously, 
+      users can explore the offerings of these onboarded restaurants and place orders 
+      directly through the platform, making it a one-stop solution for both restaurant 
+      owners and food enthusiasts.
+    `,
+    tags: [
+      {
+        name: "nodejs",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "restapi",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "reactjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "nextjs",
+        color: "pink-text-gradient"
+      },
+      {
+        name: "redis",
+        color: "pink-text-gradient"
+      },
+      {
+        name: "docker",
+        color: "green-text-gradient"
+      },
+      {
+        name: "AWS",
+        color: "blue-text-gradient"
+      },
+      {
+        name: "express",
+        color: "pink-text-gradient"
+      },
+      {
+        name: "shadcn ui",
+        color: "blue-text-gradient"
+      },
+      {
+        name: "firebase admin",
+        color: "pink-text-gradient"
+      },
+    ],
+    image: menupkPage,
+    source_code_link: "",
+    web_link: "beta.menupk.com",
+    mobile_link: ""
+  },
+  {
+    name: "De Business Consult",
+    description: `
+      This project is a comprehensive platform designed to streamline client 
+      interactions and service management for a financial services company. The backend, 
+      built with robust API architecture, supports features such as appointment scheduling, 
+      in-app communication, and document submission for various financial services. Clients 
+      can easily book appointments, receive notifications, and submit necessary financial 
+      documents for services like bookkeeping, payroll management, and financial analysis. 
+      The platform also includes a content management system where the admin can post blogs, 
+      newsletters, and updates, ensuring that clients and subscribers stay informed about the 
+      latest developments. The in-app chat system facilitates real-time communication between 
+      clients and the admin, enhancing transparency and service efficiency.
+    `,
+    tags: [
+      {
+        name: "typescript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "restapi",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "nodejs",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "socket io",
+        color: "green-text-gradient",
+      },
+      {
+        name: "hostinger",
+        color: "green-text-gradient",
+      },
+      {
+        name: "express",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: debizPage,
+    source_code_link: "https://github.com/AyobamiAjibola/De-Business-Consult.git",
+    web_link: "",
+    mobile_link: ""
+  },
+  {
+    name: "Patient Ng",
+    description: `
+      This community-driven platform is designed to revolutionize patient empowerment 
+      within the healthcare system. The application enables users to submit complaints, 
+      share personal healthcare stories, start fundraisers, and access reliable hospital 
+      ratings and reviews. Built with Node.js, Express, and Next.js, the platform offers 
+      a seamless and user-friendly interface, ensuring a smooth and responsive experience 
+      for all users. The robust backend infrastructure is hosted on Hostinger, providing 
+      scalability and reliability to handle growing demand. By fostering transparency, 
+      support, and informed decision-making, this platform transforms the patient experience 
+      and contributes to the improvement of healthcare services.
+    `,
+    tags: [
+      {
+        name: "nextjs",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "nodejs",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "redis",
+        color: "pink-text-gradient"
+      },
+      {
+        name: "hostinger",
+        color: "green-text-gradient",
+      },
+      {
+        name: "express",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: patientPage,
+    source_code_link: "https://github.com/AyobamiAjibola/ipatient.git",
+    web_link: "https://patientdotng.toverbers.com/",
+    mobile_link: ""
+  },
   {
     name: "Sparkles Landing Page",
     description:
