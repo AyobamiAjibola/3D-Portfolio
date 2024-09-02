@@ -409,7 +409,7 @@ const projects = [
   {
     name: "Menupk",
     description: `
-      Menu.PK is a Software-as-a-Service (SaaS) platform designed to revolutionize how 
+      Menu.PK is a SaaS/B2B platform designed to revolutionize how 
       restaurants in Pakistan manage their operations and engage with customers. 
       The platform enables restaurants to seamlessly onboard, manage their menus, 
       handle customer orders, and streamline their daily operations. Simultaneously, 
