@@ -195,7 +195,7 @@ const experiences = [
   },
   {
     title: "Full Stack Developer",
-    company_name: "Toverbers - IPatient NG",
+    company_name: "Toverbers - Patient NG",
     icon: patient,
     iconBg: "#fff",
     date: "May 2024 - June 2024",
