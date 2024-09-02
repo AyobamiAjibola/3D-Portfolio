@@ -57,11 +57,6 @@ import expo from './expo.png';
 import nextjs from './nextjs.png';
 import firebase from './firebase.png';
 import storybook from './storybook.png';
-<<<<<<< HEAD
-
-export {
-  sparkle,
-=======
 import python from './python.svg';
 import django from './django.svg';
 import vue from './vuejs.svg';
@@ -78,7 +73,6 @@ export {
   debiz,
   menupk,
   patient,
->>>>>>> 008fc0a (update-code)
   firebase,
   storybook,
   nextjs,
@@ -132,9 +126,6 @@ export {
   jiffix_customer,
   jiffix_workshop,
   esun,
-<<<<<<< HEAD
-  kweekbuy
-=======
   kweekbuy,
   django,
   python,
@@ -143,5 +134,4 @@ export {
   menupkPage,
   debizPage,
   patientPage
->>>>>>> 008fc0a (update-code)
 };
