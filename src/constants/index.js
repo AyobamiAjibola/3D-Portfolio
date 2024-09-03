@@ -974,12 +974,13 @@ const projects = [
   {
     name: "Hyvetech Limited - AutoHyve Workshop App",
     description:
-      `Introducing Hyvetech Workshop Management System, tailored for Hyvetech partners: a robust 
-      tool that transforms estimate generation, invoice creation, workshop stock management, 
-      vehicle repair reminders, and expense tracking. Designed for dynamic needs, it empowers 
-      with analytics for informed decisions. Seamlessly navigate and enhance productivity with 
-      its user-friendly interface and advanced features. This innovative solution sets new 
-      benchmarks for workshop management, significantly boosting operational efficiency.`,
+      `Introducing Hyvetech Workshop Management System, a powerful SaaS/B2B platform 
+      designed specifically for Hyvetech partners. This robust tool streamlines key 
+      processes like estimate generation, invoice creation, workshop stock management, 
+      vehicle repair reminders, and expense tracking. Built to meet dynamic needs, it 
+      offers advanced analytics for informed decision-making. With its intuitive interface 
+      and cutting-edge features, this innovative solution redefines workshop management, 
+      driving significant improvements in operational efficiency.`,
       tags: [
         {
           name: "nodejs",
