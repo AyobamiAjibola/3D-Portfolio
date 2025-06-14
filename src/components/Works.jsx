@@ -12,7 +12,7 @@ import { github, web_logo } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 
 const ProjectCard = ({
@@ -27,9 +27,9 @@ const ProjectCard = ({
 
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}
-      className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
+      className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full h-auto'
     >   
-      <div className='relative w-full max-h-[300px] h-auto'>
+      <div className='relative w-full'>
         {image.length > 1 
           ? (
             <Carousel 
