@@ -540,7 +540,7 @@ const projects = [
     ],
     image: [  mindease1, mindease2, mindease3, mindease4 ],
     source_code_link: "",
-    web_link: "beta.menupk.com",
+    web_link: "",
     mobile_link: ""
   },
   {
