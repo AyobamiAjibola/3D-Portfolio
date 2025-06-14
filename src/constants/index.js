@@ -50,7 +50,9 @@ import {
   patient,
   menupkPage,
   debizPage,
-  patientPage
+  patientPage,
+  go, fastapi, flask, k8s,
+   mindease1, mindease2, mindease3, mindease4
 } from "../assets";
 
 export const navLinks = [
@@ -164,9 +166,62 @@ const technologies = [
     name: "HTMX",
     icon: htmx,
   },
+  {
+    name: "Kubernetes",
+    icon: k8s
+  },
+  {
+    name: "Flask",
+    icon: flask
+  },
+  {
+    name: "FastApi",
+    icon: fastapi
+  },
+  {
+    name: "Golang",
+    icon: go
+  }
 ];
 
 const experiences = [
+  {
+    title: "Software Developer",
+    company_name: "MindEase - Stress Prediction App",
+    icon: menupk,
+    iconBg: "#fff",
+    date: "Jan 2025 - Till Date",
+    points: [
+      `Architected and implemented the entire application as a solo developer, overseeing both backend and frontend development.`,
+      `Designed a multi-service architecture using:
+        Flask for user authentication and session handling.
+        FastAPI for ML inference and prediction logic.
+        Golang for performance-critical APIs and analytical computations.`,
+      `Built a personalized machine learning model that adapts to individual user data for tailored stress predictions, alongside a generalized model trained on aggregated user data to provide accurate forecasts for non-registered users.`,
+      `Designed a structured training phase, where each user completes 20 valid data cycles (daily questionnaire + next-day stress feedback) to initialize a personalized stress model.`,
+      `Enabled continuous learning by retraining models weekly with new feedback and predictions, improving accuracy over time.`,
+      `Integrated DeepSeek LLM for generating real-time, context-aware mental wellness recommendations.`,
+      `Implemented Celery with RabbitMQ for asynchronous background task handling and efficient message queuing.`,
+      `Built a responsive Vue.js web frontend, with a consistent and accessible UI across devices`,
+      `Initiated development of a React Native mobile application for cross-platform availability.`,
+      `Integrated WebSocket and Server-Sent Events (SSE) to push real-time notifications and recommendations to users.`,
+      `Containerized all services with Docker and orchestrated them using Kubernetes for scalability, deployment consistency, and fault tolerance.`,
+      `Designed the data flow and logic for daily questionnaire submission (sleep, nutrition, workload, mood, etc.), followed by a next-day stress level feedback loop.`,
+      `Developed a mid-day check-in system to capture real-time stress adjustments and offer timely support.`
+      // `I am currently developing a stress prediction application that leverages machine learning algorithms to analyze user input and forecast stress levels. The goal is to help users better manage their mental well-being by providing personalized recommendations and actionable insights.`,
+      // `As the sole developer, I am responsible for the full stack — implementing the backend infrastructure, designing RESTful APIs, and ensuring smooth integration with the frontend interface.`,
+      // `The project is architected using a distributed services approach. I’ve employed Python and Go for different layers of the system:
+      //   – Flask handles user authentication and session management
+      //   – FastAPI powers the ML model inference and prediction logic
+      //   – Golang is used for high-performance API endpoints and advanced analytical functionalities`,
+      // `To deliver personalized recommendations, I integrated DeepSeek LLM, enabling context-aware, dynamic guidance for users.`,
+      // `The application is containerized using Docker, ensuring consistent deployment across various environments. I also implemented Kubernetes for orchestration, allowing for efficient scaling and management of the application.`,
+      // `For efficient background processing and real-time updates, I use Celery and RabbitMQ, enabling responsive task handling and scalable architecture.`,
+      // // `The data is stored in PostgreSQL, ensuring robust data integrity and efficient querying capabilities. I also implemented Redis for caching frequently accessed data, enhancing performance and reducing latency.`,
+      // `The frontend is developed using Vue.js, offering a responsive and intuitive user interface. I’ve prioritized mobile responsiveness to ensure a seamless user experience across all devices.`,
+      // `In addition, the mobile application is being developed using React Native, enabling cross-platform compatibility and native performance on both iOS and Android.`
+    ]
+  },
   {
     title: "Senior Software Developer",
     company_name: "Devsqurepk - Menupk Web App",
@@ -407,6 +462,88 @@ const testimonials = [
 
 const projects = [
   {
+    name: "Stress Prediction App",
+    description: `
+      Designed and developed a full-stack stress prediction platform that leverages machine learning to forecast users’ next-day stress levels based on daily self-reported data. Built using a distributed architecture with Python (Flask for authentication, FastAPI for ML inference) and Go (high-performance analytics and API services). Engineered a personalized ML workflow that retrains weekly and adapts to individual behavior patterns after an initial 20-day onboarding period. Integrated DeepSeek LLM for delivering AI-generated stress mitigation strategies and context-aware guidance.
+      The backend supports real-time interactions using WebSocket and SSE for notifications and task updates. Asynchronous task handling and processing are powered by Celery and RabbitMQ. Containerized the system using Docker and orchestrated deployments with Kubernetes. Developed the frontend in Vue.js with a responsive UI, while building the mobile app using React Native for cross-platform support.
+      Implemented a structured data collection flow involving daily questionnaires and follow-up stress validation prompts to enable continual model improvement. Ensured clean training cycles by validating feedback windows and managing incomplete submissions. Prioritized a seamless UX across web and mobile interfaces with a focus on behavioral insight, mental wellness, and user accountability.
+    `,
+    tags: [
+      {
+        name: "Python",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Flask",
+        color: "green-text-gradient",
+      },
+      {
+        name: "FastApi",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Golang",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Kubernetes",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Docker",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Postgres",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Celery",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Django",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "ML",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Open Router (Deepseek)",
+        color: "green-text-gradient",
+      },
+      {
+        name: "VueJS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "React-Native",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Redis",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "RabbitMQ",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Socket.IO",
+        color: "green-text-gradient",
+      },
+      {
+        name: "SSE",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: [  mindease1, mindease2, mindease3, mindease4 ],
+    source_code_link: "",
+    web_link: "beta.menupk.com",
+    mobile_link: ""
+  },
+  {
     name: "Menupk",
     description: `
       Menu.PK is a SaaS/B2B platform designed to revolutionize how 
@@ -467,7 +604,7 @@ const projects = [
         color: "pink-text-gradient"
       },
     ],
-    image: menupkPage,
+    image: [ menupkPage ],
     source_code_link: "",
     web_link: "beta.menupk.com",
     mobile_link: ""
@@ -516,7 +653,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: debizPage,
+    image: [ debizPage ],
     source_code_link: "https://github.com/AyobamiAjibola/De-Business-Consult.git",
     web_link: "",
     mobile_link: ""
@@ -564,7 +701,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: patientPage,
+    image: [ patientPage ],
     source_code_link: "https://github.com/AyobamiAjibola/ipatient.git",
     web_link: "https://patientdotng.toverbers.com/",
     mobile_link: ""
@@ -595,7 +732,7 @@ const projects = [
           color: "pink-text-gradient",
         }
       ],
-    image: sparkleBg,
+    image: [ sparkleBg ],
     source_code_link: "https://github.com/AyobamiAjibola/sparkles_landing_page.git",
     web_link: "https://www.sparkle.com.co/",
     mobile_link: ""
@@ -661,7 +798,7 @@ const projects = [
           color: "blue-text-gradient"
         }
       ],
-    image: lynkBg,
+    image: [ lynkBg ],
     source_code_link: "https://github.com/AyobamiAjibola/Lynk-Dating-Mobile-App.git",
     web_link: "",
     mobile_link: ""
@@ -729,7 +866,7 @@ const projects = [
         color: "blue-text-gradient"
       }
     ],
-    image: new_autohyve,
+    image: [ new_autohyve ],
     source_code_link: "https://github.com/AyobamiAjibola/Hyvetech-Autohyve-Web-V1.git",
     web_link: "https://auto.hyvetech.co/",
     mobile_link: ""
@@ -795,7 +932,7 @@ const projects = [
           color: "blue-text-gradient"
         }
       ],
-    image: hyve_pay,
+    image: [ hyve_pay ],
     source_code_link: "https://github.com/AyobamiAjibola/Hyvetech-Hyvepay.git",
     web_link: "https://pay.hyvetech.co",
     mobile_link: ""
@@ -849,7 +986,7 @@ const projects = [
         color: "green-text-gradient",
       }
     ],
-    image: zues_project,
+    image: [ zues_project ],
     source_code_link: "https://github.com/AyobamiAjibola/Zues-WebApp.git",
     web_link: "",
     mobile_link: ""
@@ -898,7 +1035,7 @@ const projects = [
         color: "green-text-gradient",
       }
     ],
-    image: tiklog_project,
+    image: [ tiklog_project ],
     source_code_link: "https://github.com/AyobamiAjibola/Tiklog-Delivery-App.git",
     web_link: "",
     mobile_link: ""
@@ -966,7 +1103,7 @@ const projects = [
         color: "blue-text-gradient"
       }
     ],
-    image: jiffix_customer,
+    image: [ jiffix_customer ],
     source_code_link: "https://github.com/Hyvetech-Limited/AutoHyve-web-app",
     web_link: "https://app.myautohyve.com/",
     mobile_link: ""
@@ -1035,7 +1172,7 @@ const projects = [
           color: "blue-text-gradient"
         }
       ],
-    image: jiffix_workshop,
+    image: [ jiffix_workshop ],
     source_code_link: "https://github.com/AyobamiAjibola/Hyvetech-pdms.git",
     web_link: "https://pdms.jiffixtech.com/",
     mobile_link: ""
@@ -1091,7 +1228,7 @@ const projects = [
         color: "green-text-gradient",
       }
     ],
-    image: esun,
+    image: [ esun ],
     source_code_link: "https://github.com/AyobamiAjibola/esun-ekiti",
     web_link: "https://esunekiti.ng/",
     mobile_link: ""
@@ -1123,7 +1260,7 @@ const projects = [
         color: "green-text-gradient",
       },
     ],
-    image: kweekbuy,
+    image: [ kweekbuy ],
     source_code_link: "",
     web_link: "https://www.kweekbuy.com",
     mobile_link: ""

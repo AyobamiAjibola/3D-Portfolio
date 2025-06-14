@@ -67,6 +67,14 @@ import patient from './patient.png';
 import patientPage from './patient_page.png';
 import menupkPage from './menupk-page.png';
 import debizPage from './debiz-page.png';
+import go from './go.svg';
+import fastapi from './fastapi.svg';
+import flask from './flask.svg';
+import k8s from './k8s.svg'
+import mindease1 from './mindease1.png';
+import mindease2 from './mindease2.png';
+import mindease3 from './mindease3.png';
+import mindease4 from './mindease4.png';
 
 export {
   sparkle,
@@ -133,5 +141,7 @@ export {
   htmx,
   menupkPage,
   debizPage,
-  patientPage
+  patientPage,
+  go, fastapi, flask, k8s,
+  mindease1, mindease2, mindease3, mindease4
 };

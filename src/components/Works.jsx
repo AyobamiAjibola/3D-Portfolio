@@ -12,6 +12,8 @@ import { github, web_logo } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
 
 const ProjectCard = ({
   index,
@@ -26,82 +28,80 @@ const ProjectCard = ({
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}
       className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
-    >
-      {/* <Tilt
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
-        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
-      > */}
-        
-        <div className='relative w-full h-[230px]'>
-          <img
-            src={image}
-            alt='project_image'
-            className='w-full h-full object-cover rounded-2xl'
-          />
-
-          <div className='absolute inset-0 flex justify-end m-3 card-img_hover gap-2'>
-            {source_code_link && <div
-              onClick={() => window.open(source_code_link, "_blank")}
-              className='black-gradient w-8 h-8 rounded-full flex justify-center items-center cursor-pointer'
+    >   
+      <div className='relative w-full max-h-[300px] h-auto'>
+        {image.length > 1 
+          ? (
+            <Carousel 
+              showThumbs={false}  
+              autoPlay={true} 
+              infiniteLoop={true} 
+              stopOnHover={true}
             >
-              <img
-                src={github}
-                alt='source code'
-                className='w-1/2 h-1/2 object-contain'
-              />
-            </div>}
-            {web_link && <div
-              onClick={() => window.open(web_link, "_blank")}
-              className='blue-gradient w-8 h-8 rounded-full flex justify-center items-center cursor-pointer'
-            >
-              <img
-                src={web_logo}
-                alt='web link'
-                className='w-1/2 h-1/2 object-contain'
-              />
-            </div>}
-          </div>
-        </div>
+              {image.map((img, idx) => (
+                <div key={`project-image-container-${idx}-${img}`}>
+                  <img 
+                    key={`project-image-${idx}-${img}`}
+                    alt='project_image'
+                    src={img} 
+                    className='w-full h-auto object-cover rounded-2xl'
+                  />
+                </div>
+              ))}
+            </Carousel>
+          ) : (
+            <img
+              src={image[0]}
+              alt='project_image'
+              className='w-full h-auto object-cover rounded-2xl'
+            />
+        )}
 
-        <div className='mt-5'>
-          <h3 className='text-white font-bold text-[24px]'>{name}</h3>
-          <p className='mt-2 text-secondary text-[14px]'>{description}</p>
+        <div className='absolute inset-0 flex justify-end m-3 card-img_hover gap-2'>
+          {source_code_link && <div
+            onClick={() => window.open(source_code_link, "_blank")}
+            className='black-gradient w-8 h-8 rounded-full flex justify-center items-center cursor-pointer'
+          >
+            <img
+              src={github}
+              alt='source code'
+              className='w-1/2 h-1/2 object-contain'
+            />
+          </div>}
+          {web_link && <div
+            onClick={() => window.open(web_link, "_blank")}
+            className='blue-gradient w-8 h-8 rounded-full flex justify-center items-center cursor-pointer'
+          >
+            <img
+              src={web_logo}
+              alt='web link'
+              className='w-1/2 h-1/2 object-contain'
+            />
+          </div>}
         </div>
+      </div>
 
-        <div className='mt-4 flex flex-wrap gap-2'>
-          {tags.map((tag) => (
-            <p
-              key={`${name}-${tag.name}`}
-              className={`text-[14px] ${tag.color}`}
-            >
-              #{tag.name}
-            </p>
-          ))}
-        </div>
-      {/* </Tilt> */}
+      <div className='mt-5'>
+        <h3 className='text-white font-bold text-[24px]'>{name}</h3>
+        <p className='mt-2 text-secondary text-[14px]'>{description}</p>
+      </div>
+
+      <div className='mt-4 flex flex-wrap gap-2'>
+        {tags.map((tag) => (
+          <p
+            key={`${name}-${tag.name}`}
+            className={`text-[14px] ${tag.color}`}
+          >
+            #{tag.name}
+          </p>
+        ))}
+      </div>
+      
     </motion.div>
   );
 };
 
 const Works = () => {
-
-  // const [currentIndex, setCurrentIndex] = useState(0);
-
-  // const handlePrevClick = () => {
-  //   setCurrentIndex((prevIndex) =>
-  //     prevIndex === 0 ? projects.length - 1 : prevIndex - 1
-  //   );
-  // };
-
-  // const handleNextClick = () => {
-  //   setCurrentIndex((prevIndex) =>
-  //     prevIndex === projects.length - 1 ? 0 : prevIndex + 1
-  //   );
-  // };
 
   return (
     <>
@@ -126,26 +126,6 @@ const Works = () => {
 
       <div className='mt-20'>
 
-        {/*<div className='flex items-center justify-between mb-4'>
-          <button
-            onClick={handlePrevClick}
-            disabled={currentIndex === 0}
-          >Previous</button>
-          <button 
-            onClick={handleNextClick}
-            disabled={currentIndex >= projects.length - 3}
-          >Next</button>
-        </div>
-        <div className='flex flex-wrap gap-7'>
-           {projects.map((project, index) => (
-            <div
-              key={`project-${index}`}
-              className={`project-card ${index >= currentIndex && index < currentIndex + 3 ? 'visible' : 'hidden'}`}
-            >
-              <ProjectCard key={`project-${index}`} index={index} {...project} />
-            </div>
-          ))} */}
-
           <Swiper
             slidesPerView={3}
             spaceBetween={30}
@@ -158,7 +138,11 @@ const Works = () => {
           >
             {projects.map((project, index) => (
               <SwiperSlide key={`swiper-slide-${index}`}>
-                <ProjectCard key={`project-${index}`} index={index} {...project} />
+                <ProjectCard 
+                  key={`project-${index}`} 
+                  index={index} 
+                  {...project}
+                />
               </SwiperSlide>
             ))}
         </Swiper>
