@@ -227,7 +227,7 @@ const experiences = [
     company_name: "Devsqurepk - Menupk Web App",
     icon: menupk,
     iconBg: "#fff",
-    date: "Feb 2024 - Till Date",
+    date: "Feb 2024 - June 2025",
     points: [
       `I play a pivotal role in the creation of Menu.PK, an innovative platform that allows users to explore and discover a wide variety of menus showcasing authentic flavors from across Pakistan. I designed, developed, and implemented the backend infrastructure, creating robust RESTful APIs that power the web application’s various functionalities, ensuring seamless user experiences and efficient data management.`,
       `In addition to backend development, I also contribute to building key frontend components, collaborating closely with the design and development teams to create an intuitive and engaging user interface. This involved implementing responsive design principles to ensure a consistent user experience across all devices.`,
