@@ -187,7 +187,7 @@ const technologies = [
 const experiences = [
   {
     title: "Software Developer",
-    company_name: "MindEase - Stress Prediction App",
+    company_name: "StressShield - Stress Prediction App",
     icon: menupk,
     iconBg: "#fff",
     date: "Jan 2025 - Till Date",
@@ -462,7 +462,7 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Stress Prediction App",
+    name: "StressShield - Stress Prediction App",
     description: `
       Designed and developed a full-stack stress prediction platform that leverages machine learning to forecast users’ next-day stress levels based on daily self-reported data. Built using a distributed architecture with Python (Flask for authentication, FastAPI for ML inference) and Go (high-performance analytics and API services). Engineered a personalized ML workflow that retrains weekly and adapts to individual behavior patterns after an initial 20-day onboarding period. Integrated DeepSeek LLM for delivering AI-generated stress mitigation strategies and context-aware guidance.
       The backend supports real-time interactions using WebSocket and SSE for notifications and task updates. Asynchronous task handling and processing are powered by Celery and RabbitMQ. Containerized the system using Docker and orchestrated deployments with Kubernetes. Developed the frontend in Vue.js with a responsive UI, while building the mobile app using React Native for cross-platform support.
