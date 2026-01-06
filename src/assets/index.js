@@ -75,9 +75,32 @@ import mindease1 from './mindease1.png';
 import mindease2 from './mindease2.png';
 import mindease3 from './mindease3.png';
 import mindease4 from './mindease4.png';
+import lefort from './lefort.jpeg';
+import lefort_bg from './leforth_.png';
+import talksharp from './talksharp.svg';
+import talk_1 from './talk_1.png';
+import talk_2 from './talk_2.png';
+import talk_3 from './talk_3.png';
+import talk_4 from './talk_4.png';
+import talk_5 from './talk_5.png';
+import talk_6 from './talk_6.png';
+import talk_7 from './talk_7.png';
+import talk_8 from './talk_8.png';
+
 
 export {
   sparkle,
+  talk_1,
+  talk_2,
+  talk_3,
+  talk_4,
+  talk_5,
+  talk_6,
+  talk_7,
+  talk_8,
+  lefort_bg,
+  talksharp,
+  lefort,
   debiz,
   menupk,
   patient,

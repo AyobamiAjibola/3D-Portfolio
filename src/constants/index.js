@@ -52,7 +52,18 @@ import {
   debizPage,
   patientPage,
   go, fastapi, flask, k8s,
-   mindease1, mindease2, mindease3, mindease4
+   mindease1, mindease2, mindease3, mindease4,
+   lefort,
+   talksharp,
+   lefort_bg,
+   talk_1,
+   talk_2,
+   talk_3,
+   talk_4,
+   talk_5,
+   talk_6,
+   talk_7,
+   talk_8
 } from "../assets";
 
 export const navLinks = [
@@ -186,11 +197,45 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Software Developer",
+    title: "Full Stack Developer",
+    company_name: "Lé Fortifier Corp",
+    icon: lefort,
+    iconBg: "#fff",
+    date: "May 2025 - In Progress",
+    points: [
+      `Developed backend and frontend features for a client-facing SaaS platform using JavaScript frameworks and REST APIs to support core business workflows.
+Built and delivered full-stack features that supported key customer workflows such as data entry, record management, reporting, and user interactions. Implemented RESTful APIs and integrated them with responsive frontend components, ensuring smooth data flow, reliability, and a consistent user experience across the application.`,
+      `Collaborated cross-functionally with product and design partners to scope features, align on requirements, and deliver work incrementally across multiple releases.
+Worked closely with product managers and designers to translate business needs and early concepts into clear technical requirements. Participated in design discussions and reviews, helping refine UX flows and technical feasibility, and delivered features incrementally to gather feedback and reduce risk.`,
+      `Broke down features into well-defined milestones, proactively communicating progress, risks, and blockers to ensure timely delivery.
+Decomposed larger initiatives into manageable milestones and tasks, enabling predictable delivery and easier tracking. Maintained regular communication with stakeholders to provide status updates, surface risks early, and resolve blockers before they impacted timelines.`,
+      `Worked within Git-based workflows and CI/CD pipelines to maintain reliable deployments and consistent release quality.
+Contributed code through structured Git workflows, including pull requests and code reviews, to maintain quality and consistency. Leveraged CI/CD pipelines to automate testing and deployments, helping ensure stable releases and reducing the likelihood of production issues.`
+    ]
+  },
+  {
+    title: "CTO / Full Stack Developer",
+    company_name: "TalkSharp",
+    icon: talksharp,
+    iconBg: "#fff",
+    date: "Aug 2025 - In Progress",
+    points: [
+      `Designed and implemented backend authentication and data-processing APIs using Firebase Cloud Functions to support secure user onboarding and identity workflows.
+Built secure and scalable authentication and user management systems using Firebase Authentication and Cloud Functions to handle onboarding, session management, and user progression tracking. Designed backend workflows to manage user profiles, learning history, lesson progress, and achievements while ensuring data integrity and low-latency access for a smooth learning experience.`,
+      `Developed AI features, including an LLM-integrated conversational chatbot, to enable interactive language learning experiences.
+Integrated an LLM-powered conversational chatbot that allows learners to practice African languages through real-time dialogue, simulating natural conversations rather than static exercises. Designed prompts and conversation flows to adapt to the learner’s proficiency level, provide contextual corrections, and reinforce vocabulary and grammar in a fun, engaging way.`,
+      `Owned engineering outcomes end-to-end, from technical planning and implementation to deployment and iteration based on user feedback.
+Led the engineering efforts across backend services, AI features, and product workflows, translating learning goals and product ideas into technical solutions. Iterated on features based on learner feedback and usage patterns, continuously improving lesson flow, chatbot interactions, and system reliability.`,
+      `Implemented CI/CD pipelines with GitHub Actions, improving build reliability and deployment speed.
+Set up automated CI/CD pipelines using GitHub Actions to test, build, and deploy Cloud Functions and application services. This streamlined release cycles, reduced manual deployment errors, and enabled faster iteration as new lessons, AI features, and improvements were introduced.`
+    ]
+  },
+  {
+    title: "Founder / Software Engineer",
     company_name: "StressShield - Stress Prediction App",
     icon: menupk,
     iconBg: "#fff",
-    date: "Jan 2025 - Till Date",
+    date: "Jan 2025 - In Progress",
     points: [
       `Architected and implemented the entire application as a solo developer, overseeing both backend and frontend development.`,
       `Designed a multi-service architecture using:
@@ -207,7 +252,8 @@ const experiences = [
       `Integrated WebSocket and Server-Sent Events (SSE) to push real-time notifications and recommendations to users.`,
       `Containerized all services with Docker and orchestrated them using Kubernetes for scalability, deployment consistency, and fault tolerance.`,
       `Designed the data flow and logic for daily questionnaire submission (sleep, nutrition, workload, mood, etc.), followed by a next-day stress level feedback loop.`,
-      `Developed a mid-day check-in system to capture real-time stress adjustments and offer timely support.`
+      `Developed a mid-day check-in system to capture real-time stress adjustments and offer timely support.`,
+      `Designed and implemented Retrieval-Augmented Generation (RAG) workflows that combine structured user data—such as profiles, historical activity, preferences, and contextual signals—with carefully crafted LLM prompts to generate more accurate, personalized, and relevant insights. Built data retrieval and preprocessing layers to select the most meaningful user context at inference time, ensuring the LLM responses were grounded in real, up-to-date information rather than generic output. This approach significantly improved the quality, consistency, and usefulness of generated insights, while reducing hallucinations and increasing user trust in the system’s recommendations.`
       // `I am currently developing a stress prediction application that leverages machine learning algorithms to analyze user input and forecast stress levels. The goal is to help users better manage their mental well-being by providing personalized recommendations and actionable insights.`,
       // `As the sole developer, I am responsible for the full stack — implementing the backend infrastructure, designing RESTful APIs, and ensuring smooth integration with the frontend interface.`,
       // `The project is architected using a distributed services approach. I’ve employed Python and Go for different layers of the system:
@@ -352,7 +398,7 @@ const experiences = [
     company_name: "A'Mobi Ltd - Zues Web App",
     icon: zues,
     iconBg: "#012D01",
-    date: "July 2023 - In progress",
+    date: "July 2023 - September 2023",
     points: [
       `Created a strong data scraping algorithm to extract user shopping preferences from Jiji and Jumia. 
       Integrated this data into the Zeus app, offering insights into popular products. Vendors can use this 
@@ -462,6 +508,98 @@ const testimonials = [
 
 const projects = [
   {
+    name: "Lé Fortifier Corp - SaaS Platform",
+    description: `
+     A full-stack SaaS application designed to support core business workflows through reliable, user-friendly, and scalable features. The platform enables key customer activities such as data entry, record management, reporting, and day-to-day user interactions through a combination of RESTful APIs and responsive frontend components.
+
+The system was built using modern JavaScript frameworks, with close integration between backend services and the frontend to ensure smooth data flow, consistency, and a high-quality user experience. Development was carried out in close collaboration with product managers and designers, translating early concepts and business requirements into well-defined technical solutions and refined user flows.
+
+Work was delivered incrementally across multiple releases by breaking down larger initiatives into clear milestones, maintaining proactive communication around progress, risks, and blockers. The project followed structured Git-based workflows and CI/CD pipelines, enabling automated testing, reliable deployments, and consistent release quality as the product evolved.
+    `,
+    tags: [
+      {
+        name: "Javascript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Typescript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "NodeJS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Postgres",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "ExpressJS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "ReactJS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "NextJS",
+        color: "blue-text-gradient",
+      }
+    ],
+    image: [ lefort_bg ],
+    source_code_link: "",
+    web_link: "",
+    mobile_link: ""
+  },
+  {
+    name: "TalkSharp - Language Learning App",
+    description: `
+      TalkSharp is an an interactive, AI-driven language learning platform designed to teach African languages through engaging, conversation-first experiences. The product combines secure backend systems with real-time AI interactions to deliver a fun, personalized, and scalable learning journey.  The backend was built using Firebase Authentication and Cloud Functions to support secure user onboarding, identity management, and session handling. Backend workflows were designed to track learner profiles, lesson progress, achievements, and learning history, ensuring low-latency access and a smooth, reliable user experience.  To enhance engagement and learning effectiveness, the platform integrates an LLM-powered conversational chatbot that enables learners to practice languages through natural dialogue rather than static exercises. Conversation flows and prompts adapt dynamically to each learner’s proficiency level, providing contextual corrections and reinforcing vocabulary and grammar in an intuitive and enjoyable way.  Engineering ownership spanned the full lifecycle—from technical planning and implementation to deployment and continuous iteration driven by user feedback and usage data. CI/CD pipelines were implemented using GitHub Actions to automate testing and deployments, improving release reliability and enabling faster iteration as new lessons, AI features, and platform improvements were introduced.
+    `,
+    tags: [
+      {
+        name: "Javascript",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Typescript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "ReactJS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "NodeJS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "ExpressJS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Firebase",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "GCP",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Firebase Functions",
+        color: "green-text-gradient",
+      },
+      {
+        name: "LLM",
+        color: "pink-text-gradient",
+      }
+    ],
+    image: [ talk_1, talk_2, talk_3, talk_4, talk_5, talk_6, talk_7,talk_8, ],
+    source_code_link: "",
+    web_link: "",
+    mobile_link: ""
+  },
+  {
     name: "StressShield - Stress Prediction App",
     description: `
       Designed and developed a full-stack stress prediction platform that leverages machine learning to forecast users’ next-day stress levels based on daily self-reported data. Built using a distributed architecture with Python (Flask for authentication, FastAPI for ML inference) and Go (high-performance analytics and API services). Engineered a personalized ML workflow that retrains weekly and adapts to individual behavior patterns after an initial 20-day onboarding period. Integrated DeepSeek LLM for delivering AI-generated stress mitigation strategies and context-aware guidance.
@@ -508,6 +646,10 @@ const projects = [
       {
         name: "ML",
         color: "blue-text-gradient",
+      },
+      {
+        name: "LLM",
+        color: "pink-text-gradient",
       },
       {
         name: "Open Router (Deepseek)",
