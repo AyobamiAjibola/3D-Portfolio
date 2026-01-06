@@ -508,13 +508,15 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Lé Fortifier Corp - SaaS Platform",
+    name: "Lé Fortifier Corp",
     description: `
-     A full-stack SaaS application designed to support core business workflows through reliable, user-friendly, and scalable features. The platform enables key customer activities such as data entry, record management, reporting, and day-to-day user interactions through a combination of RESTful APIs and responsive frontend components.
+     Lé Fortifier Corp is a software development company delivering scalable, client-facing SaaS solutions. As a Full Stack Developer, I contributed to the development of one of the company’s SaaS products designed to support core business workflows through reliable, user-friendly, and scalable features.
 
-The system was built using modern JavaScript frameworks, with close integration between backend services and the frontend to ensure smooth data flow, consistency, and a high-quality user experience. Development was carried out in close collaboration with product managers and designers, translating early concepts and business requirements into well-defined technical solutions and refined user flows.
+I worked across both backend and frontend, building and integrating RESTful APIs with responsive frontend components to enable key customer activities such as data entry, record management, reporting, and day-to-day user interactions. The platform was developed using modern JavaScript frameworks, with a strong focus on smooth data flow, consistency, and a high-quality user experience.
 
-Work was delivered incrementally across multiple releases by breaking down larger initiatives into clear milestones, maintaining proactive communication around progress, risks, and blockers. The project followed structured Git-based workflows and CI/CD pipelines, enabling automated testing, reliable deployments, and consistent release quality as the product evolved.
+I collaborated closely with product managers and designers to translate early concepts and business requirements into well-defined technical solutions and refined user flows. Features were delivered incrementally across multiple releases by breaking down larger initiatives into clear milestones, proactively communicating progress, risks, and blockers to ensure timely delivery.
+
+The project followed structured Git-based workflows and CI/CD pipelines, supporting automated testing, reliable deployments, and consistent release quality as the product evolved.
     `,
     tags: [
       {

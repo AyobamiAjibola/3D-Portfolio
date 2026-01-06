@@ -45,7 +45,7 @@ const About = () => {
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className='md:mt-4 mt-80 text-secondary text-[17px] max-w-3xl leading-[30px]'
+        className='md:mt-4 mt-80 text-secondary text-[17px] max-w-3xl leading-[30px] text-justify'
       >
         I am a full-stack software engineer based in Calgary, Canada, with over five years of experience building scalable, product-driven, and AI-powered web applications. I work across both backend and frontend, designing robust APIs and services using Python, Node.js, and Go, with hands-on experience using ExpressJS, Django, Flask, and FastAPI, and building fast, intuitive, and scalable user interfaces with React, React-Native, TypeScript, Vue.js, and Next.js.
 I have strong experience with cloud platforms such as AWS, GCP, and Firebase, and I use Docker and Kubernetes to build, deploy, and scale reliable production systems. My approach centers on writing clean, maintainable code, designing systems that scale, and delivering user experiences that are performant, reliable, and easy to use.
