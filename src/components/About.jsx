@@ -47,14 +47,9 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='md:mt-4 mt-80 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I am an adept Full Stack web and React Native mobile app developer. 
-        I harness the power of ReactJS, React-Native and NodeJS to engineer 
-        comprehensive frontend and backend solutions for both web-based and mobile 
-        applications. My approach revolves around leveraging top-notch technologies 
-        to enhance user experiences. Through close collaboration with clients, 
-        I am dedicated to devising efficient, scalable, and user-centric solutions 
-        that address tangible challenges. Let's team up to transform your visions 
-        into reality!
+        I am a full-stack software engineer based in Calgary, Canada, with over five years of experience building scalable, product-driven, and AI-powered web applications. I work across both backend and frontend, designing robust APIs and services using Python, Node.js, and Go, with hands-on experience using ExpressJS, Django, Flask, and FastAPI, and building fast, intuitive, and scalable user interfaces with React, React-Native, TypeScript, Vue.js, and Next.js.
+I have strong experience with cloud platforms such as AWS, GCP, and Firebase, and I use Docker and Kubernetes to build, deploy, and scale reliable production systems. My approach centers on writing clean, maintainable code, designing systems that scale, and delivering user experiences that are performant, reliable, and easy to use.
+I enjoy collaborating closely with product managers and designers to turn ideas into impactful solutions, and I’m driven by ownership, continuous improvement, and building products at the intersection of software engineering, cloud platforms, and AI.
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
