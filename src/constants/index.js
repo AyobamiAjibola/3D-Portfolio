@@ -351,6 +351,9 @@ Set up automated CI/CD pipelines using GitHub Actions to test, build, and deploy
     iconBg: "#383E56",
     date: "October 2023 - October 2023",
     points: [
+      `Developed and integrated backend APIs for a SaaS/B2B workshop management platform, enabling core 
+      features such as estimates, invoicing, inventory management, expense tracking, vehicle repair reminders, 
+      and analytics-driven reporting across multiple frontend applications.`,
       `As the individual responsible for migrating Autohyve's infrastructure and codebase to a new AWS account, 
       I orchestrated the creation and configuration of the account, ensured a seamless transfer of 
       existing infrastructure components, implemented security measures, established network 
@@ -380,6 +383,9 @@ Set up automated CI/CD pipelines using GitHub Actions to test, build, and deploy
     iconBg: "#383E56",
     date: "August 2023 - October 2023",
     points: [
+      `Developed and integrated secure backend APIs for a fintech platform embedded within the Autohyve system, 
+      enabling seamless in-app payments, transfers, and financial operations across web and mobile clients for 
+      automotive businesses and individuals.`,
       `I developed and implemented a secure and scalable API for bulk transactions from a partner virtual 
         account to multiple accounts, this enhanced transaction efficiency within the application.`,
       `Designed and seamlessly integrated the user-friendly front-end interface, enabling users to 
@@ -1018,7 +1024,7 @@ The project followed structured Git-based workflows and CI/CD pipelines, support
   {
     name: "Hyvetech Limited - HyvePay",
     description:
-      `Hyvepay, developed by Hyvetech, stands as a pioneering fintech product. Serving as a preferred banking solution, Hyvepay caters specifically to mechanics, automotive shops, spare part retailers, and individuals seeking a reliable platform for seamless money transfers and receipts.
+      `Hyvepay, a Hyvetech product, stands as a pioneering fintech product. Serving as a preferred banking solution, Hyvepay caters specifically to mechanics, automotive shops, spare part retailers, and individuals seeking a reliable platform for seamless money transfers and receipts.
       Positioned at the intersection of convenience and innovation, Hyvepay offers a comprehensive suite of financial tools and services. It empowers users within the automotive industry and beyond to efficiently send and receive money, providing a secure and user-friendly experience.
       Hyvepay's distinct focus on serving mechanics, auto shops, spare part retailers, and individuals highlights its commitment to addressing the specific financial needs of these sectors. By leveraging the Hyvepay platform, users can tap into a modern banking experience tailored to enhance their financial operations.
       With a foundation built on trust, technological prowess, and a user-centric approach, Hyvepay redefines banking solutions, making financial transactions effortless and empowering businesses and individuals to thrive in a digitally connected world.`,
