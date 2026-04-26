@@ -197,28 +197,11 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Full Stack Developer",
-    company_name: "Lé Fortifier Corp",
-    icon: lefort,
-    iconBg: "#fff",
-    date: "May 2025 - In Progress",
-    points: [
-      `Developed backend and frontend features for a client-facing SaaS platform using JavaScript frameworks and REST APIs to support core business workflows.
-Built and delivered full-stack features that supported key customer workflows such as data entry, record management, reporting, and user interactions. Implemented RESTful APIs and integrated them with responsive frontend components, ensuring smooth data flow, reliability, and a consistent user experience across the application.`,
-      `Collaborated cross-functionally with product and design partners to scope features, align on requirements, and deliver work incrementally across multiple releases.
-Worked closely with product managers and designers to translate business needs and early concepts into clear technical requirements. Participated in design discussions and reviews, helping refine UX flows and technical feasibility, and delivered features incrementally to gather feedback and reduce risk.`,
-      `Broke down features into well-defined milestones, proactively communicating progress, risks, and blockers to ensure timely delivery.
-Decomposed larger initiatives into manageable milestones and tasks, enabling predictable delivery and easier tracking. Maintained regular communication with stakeholders to provide status updates, surface risks early, and resolve blockers before they impacted timelines.`,
-      `Worked within Git-based workflows and CI/CD pipelines to maintain reliable deployments and consistent release quality.
-Contributed code through structured Git workflows, including pull requests and code reviews, to maintain quality and consistency. Leveraged CI/CD pipelines to automate testing and deployments, helping ensure stable releases and reducing the likelihood of production issues.`
-    ]
-  },
-  {
-    title: "CTO / Full Stack Developer",
+    title: "Lead Full Stack Engineer",
     company_name: "TalkSharp",
     icon: talksharp,
     iconBg: "#fff",
-    date: "Aug 2025 - In Progress",
+    date: "May 2025 - In Progress",
     points: [
       `Designed and implemented backend authentication and data-processing APIs using Firebase Cloud Functions to support secure user onboarding and identity workflows.
 Built secure and scalable authentication and user management systems using Firebase Authentication and Cloud Functions to handle onboarding, session management, and user progression tracking. Designed backend workflows to manage user profiles, learning history, lesson progress, and achievements while ensuring data integrity and low-latency access for a smooth learning experience.`,
@@ -231,13 +214,30 @@ Set up automated CI/CD pipelines using GitHub Actions to test, build, and deploy
     ]
   },
   {
-    title: "Founder / Software Engineer",
+    title: "Full Stack Developer (remote)",
+    company_name: "Lé Fortifier Corp",
+    icon: lefort,
+    iconBg: "#fff",
+    date: "June 2025 - Dec 2025",
+    points: [
+      `Developed backend and frontend features for a client-facing SaaS platform using JavaScript frameworks and REST APIs to support core business workflows.
+Built and delivered full-stack features that supported key customer workflows such as data entry, record management, reporting, and user interactions. Implemented RESTful APIs and integrated them with responsive frontend components, ensuring smooth data flow, reliability, and a consistent user experience across the application.`,
+      `Collaborated cross-functionally with product and design partners to scope features, align on requirements, and deliver work incrementally across multiple releases.
+Worked closely with product managers and designers to translate business needs and early concepts into clear technical requirements. Participated in design discussions and reviews, helping refine UX flows and technical feasibility, and delivered features incrementally to gather feedback and reduce risk.`,
+      `Broke down features into well-defined milestones, proactively communicating progress, risks, and blockers to ensure timely delivery.
+Decomposed larger initiatives into manageable milestones and tasks, enabling predictable delivery and easier tracking. Maintained regular communication with stakeholders to provide status updates, surface risks early, and resolve blockers before they impacted timelines.`,
+      `Worked within Git-based workflows and CI/CD pipelines to maintain reliable deployments and consistent release quality.
+Contributed code through structured Git workflows, including pull requests and code reviews, to maintain quality and consistency. Leveraged CI/CD pipelines to automate testing and deployments, helping ensure stable releases and reducing the likelihood of production issues.`
+    ]
+  },
+  {
+    title: "Lead Full Stack Engineer",
     company_name: "StressShield - Stress Prediction App",
     icon: menupk,
     iconBg: "#fff",
     date: "Jan 2025 - In Progress",
     points: [
-      `Architected and implemented the entire application as a solo developer, overseeing both backend and frontend development.`,
+      `Architected the application, overseeing both backend and frontend development.`,
       `Designed a multi-service architecture using:
         Flask for user authentication and session handling.
         FastAPI for ML inference and prediction logic.
