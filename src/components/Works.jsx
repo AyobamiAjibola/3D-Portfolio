@@ -70,7 +70,7 @@ const ProjectCard = ({
           </div>}
           {web_link && <div
             onClick={() => window.open(web_link, "_blank")}
-            className='blue-gradient w-8 h-8 rounded-full flex justify-center items-center cursor-pointer'
+            className='blue-gradient w-12 h-12 rounded-full flex justify-center items-center cursor-pointer'
           >
             <img
               src={web_logo}
