@@ -57,7 +57,7 @@ const Navbar = () => {
           />
           <p className='text-white text-[18px] font-bold flex'>
             Ayobami &nbsp;
-            <span className='md:block hidden text-[#915EFF]'> | Software Developer</span>
+            <span className='md:block hidden text-[#915EFF]'> | Software Engineer</span>
           </p>
           <button
             className="border border-[#915EFF] md:ml-[3rem] xs:ml-[1rem]

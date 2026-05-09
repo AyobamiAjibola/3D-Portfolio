@@ -127,7 +127,7 @@ const Works = () => {
       <div className='mt-20'>
 
           <Swiper
-            spaceBetween={0}
+            spaceBetween={20}
             mousewheel={true}
             keyboard={true}
             cssMode={true}
@@ -161,4 +161,4 @@ const Works = () => {
   );
 };
 
-export default SectionWrapper(Works, "");
+export default SectionWrapper(Works, "project");
