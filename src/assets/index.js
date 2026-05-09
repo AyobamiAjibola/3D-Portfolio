@@ -86,7 +86,7 @@ import talk_5 from './talk_5.png';
 import talk_6 from './talk_6.png';
 import talk_7 from './talk_7.png';
 import talk_8 from './talk_8.png';
-
+import moba_labs from './moba_labs.png';
 
 export {
   sparkle,
@@ -166,5 +166,5 @@ export {
   debizPage,
   patientPage,
   go, fastapi, flask, k8s,
-  mindease1, mindease2, mindease3, mindease4
+  mindease1, mindease2, mindease3, mindease4, moba_labs
 };

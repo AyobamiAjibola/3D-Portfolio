@@ -63,7 +63,8 @@ import {
    talk_5,
    talk_6,
    talk_7,
-   talk_8
+   talk_8,
+   moba_labs
 } from "../assets";
 
 export const navLinks = [
@@ -233,7 +234,7 @@ Contributed code through structured Git workflows, including pull requests and c
   {
     title: "Lead Full Stack Engineer",
     company_name: "StressShield - Stress Prediction App",
-    icon: menupk,
+    icon: moba_labs,
     iconBg: "#fff",
     date: "Jan 2025 - In Progress",
     points: [
@@ -514,52 +515,6 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Lé Fortifier Corp",
-    description: `
-     Lé Fortifier Corp is a software development company delivering scalable, client-facing SaaS solutions. As a Full Stack Developer, I contributed to the development of one of the company’s SaaS products designed to support core business workflows through reliable, user-friendly, and scalable features.
-
-I worked across both backend and frontend, building and integrating RESTful APIs with responsive frontend components to enable key customer activities such as data entry, record management, reporting, and day-to-day user interactions. The platform was developed using modern JavaScript frameworks, with a strong focus on smooth data flow, consistency, and a high-quality user experience.
-
-I collaborated closely with product managers and designers to translate early concepts and business requirements into well-defined technical solutions and refined user flows. Features were delivered incrementally across multiple releases by breaking down larger initiatives into clear milestones, proactively communicating progress, risks, and blockers to ensure timely delivery.
-
-The project followed structured Git-based workflows and CI/CD pipelines, supporting automated testing, reliable deployments, and consistent release quality as the product evolved.
-    `,
-    tags: [
-      {
-        name: "Javascript",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Typescript",
-        color: "green-text-gradient",
-      },
-      {
-        name: "NodeJS",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Postgres",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "ExpressJS",
-        color: "green-text-gradient",
-      },
-      {
-        name: "ReactJS",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "NextJS",
-        color: "blue-text-gradient",
-      }
-    ],
-    image: [ lefort_bg ],
-    source_code_link: "",
-    web_link: "",
-    mobile_link: ""
-  },
-  {
     name: "TalkSharp - Language Learning App",
     description: `
       TalkSharp is an an interactive, AI-driven language learning platform designed to teach African languages through engaging, conversation-first experiences. The product combines secure backend systems with real-time AI interactions to deliver a fun, personalized, and scalable learning journey.  The backend was built using Firebase Authentication and Cloud Functions to support secure user onboarding, identity management, and session handling. Backend workflows were designed to track learner profiles, lesson progress, achievements, and learning history, ensuring low-latency access and a smooth, reliable user experience.  To enhance engagement and learning effectiveness, the platform integrates an LLM-powered conversational chatbot that enables learners to practice languages through natural dialogue rather than static exercises. Conversation flows and prompts adapt dynamically to each learner’s proficiency level, providing contextual corrections and reinforcing vocabulary and grammar in an intuitive and enjoyable way.  Engineering ownership spanned the full lifecycle—from technical planning and implementation to deployment and continuous iteration driven by user feedback and usage data. CI/CD pipelines were implemented using GitHub Actions to automate testing and deployments, improving release reliability and enabling faster iteration as new lessons, AI features, and platform improvements were introduced.
@@ -607,6 +562,53 @@ The project followed structured Git-based workflows and CI/CD pipelines, support
     web_link: "",
     mobile_link: ""
   },
+  {
+    name: "Lé Fortifier Corp",
+    description: `
+     Lé Fortifier Corp is a software development company delivering scalable, client-facing SaaS solutions. As a Full Stack Developer, I contributed to the development of one of the company’s SaaS products designed to support core business workflows through reliable, user-friendly, and scalable features.
+
+I worked across both backend and frontend, building and integrating RESTful APIs with responsive frontend components to enable key customer activities such as data entry, record management, reporting, and day-to-day user interactions. The platform was developed using modern JavaScript frameworks, with a strong focus on smooth data flow, consistency, and a high-quality user experience.
+
+I collaborated closely with product managers and designers to translate early concepts and business requirements into well-defined technical solutions and refined user flows. Features were delivered incrementally across multiple releases by breaking down larger initiatives into clear milestones, proactively communicating progress, risks, and blockers to ensure timely delivery.
+
+The project followed structured Git-based workflows and CI/CD pipelines, supporting automated testing, reliable deployments, and consistent release quality as the product evolved.
+    `,
+    tags: [
+      {
+        name: "Javascript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Typescript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "NodeJS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Postgres",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "ExpressJS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "ReactJS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "NextJS",
+        color: "blue-text-gradient",
+      }
+    ],
+    image: [ lefort_bg ],
+    source_code_link: "",
+    web_link: "",
+    mobile_link: ""
+  },
+  
   {
     name: "StressShield - Stress Prediction App",
     description: `

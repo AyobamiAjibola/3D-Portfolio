@@ -81,7 +81,7 @@ const ProjectCard = ({
         </div>
       </div>
 
-      <div className='mt-5'>
+      <div className='mt-5 '>
         <h3 className='text-white font-bold text-[24px]'>{name}</h3>
         <p className='mt-2 text-secondary text-[14px]'>{description}</p>
       </div>
@@ -127,14 +127,24 @@ const Works = () => {
       <div className='mt-20'>
 
           <Swiper
-            slidesPerView={3}
-            spaceBetween={30}
+            spaceBetween={0}
             mousewheel={true}
             keyboard={true}
             cssMode={true}
             navigation={true}
             modules={[Navigation, Mousewheel, Keyboard]}
             className="w-[100%] h-[auto]"
+            breakpoints={{
+              0: {
+                slidesPerView: 1,
+              },
+              640: {
+                slidesPerView: 2,
+              },
+              1024: {
+                slidesPerView: 3,
+              },
+            }}
           >
             {projects.map((project, index) => (
               <SwiperSlide key={`swiper-slide-${index}`}>
