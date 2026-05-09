@@ -567,7 +567,7 @@ const projects = [
     ],
     image: [ talk_1, talk_2, talk_3, talk_4, talk_5, talk_6, talk_7,talk_8, ],
     source_code_link: "",
-    web_link: "",
+    web_link: "https://app.talksharp.co",
     mobile_link: ""
   },
   {
