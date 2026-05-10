@@ -616,7 +616,6 @@ The project followed structured Git-based workflows and CI/CD pipelines, support
     web_link: "",
     mobile_link: ""
   },
-  
   {
     name: "StressShield - Stress Prediction App",
     description: `
@@ -704,7 +703,7 @@ The project followed structured Git-based workflows and CI/CD pipelines, support
     mobile_link: ""
   },
   {
-    name: "Menupk",
+    name: "Menupk - Restaurant Management Platform",
     description: `
       Menu.PK is a SaaS/B2B platform designed to revolutionize how 
       restaurants in Pakistan manage their operations and engage with customers. 
@@ -770,6 +769,54 @@ The project followed structured Git-based workflows and CI/CD pipelines, support
     mobile_link: ""
   },
   {
+    name: "Patient Ng",
+    description: `
+      This community-driven platform is designed to revolutionize patient empowerment 
+      within the healthcare system. The application enables users to submit complaints, 
+      share personal healthcare stories, start fundraisers, and access reliable hospital 
+      ratings and reviews. Built with Node.js, Express, and Next.js, the platform offers 
+      a seamless and user-friendly interface, ensuring a smooth and responsive experience 
+      for all users. The robust backend infrastructure is hosted on Hostinger, providing 
+      scalability and reliability to handle growing demand. By fostering transparency, 
+      support, and informed decision-making, this platform transforms the patient experience 
+      and contributes to the improvement of healthcare services.
+    `,
+    tags: [
+      {
+        name: "nextjs",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "nodejs",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "redis",
+        color: "pink-text-gradient"
+      },
+      {
+        name: "hostinger",
+        color: "green-text-gradient",
+      },
+      {
+        name: "express",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: [ patientPage ],
+    source_code_link: "https://github.com/AyobamiAjibola/ipatient.git",
+    web_link: "https://ipatient.vercel.app/",
+    mobile_link: ""
+  },
+  {
     name: "De Business Consult",
     description: `
       This project is a comprehensive platform designed to streamline client 
@@ -816,54 +863,6 @@ The project followed structured Git-based workflows and CI/CD pipelines, support
     image: [ debizPage ],
     source_code_link: "https://github.com/AyobamiAjibola/De-Business-Consult.git",
     web_link: "",
-    mobile_link: ""
-  },
-  {
-    name: "Patient Ng",
-    description: `
-      This community-driven platform is designed to revolutionize patient empowerment 
-      within the healthcare system. The application enables users to submit complaints, 
-      share personal healthcare stories, start fundraisers, and access reliable hospital 
-      ratings and reviews. Built with Node.js, Express, and Next.js, the platform offers 
-      a seamless and user-friendly interface, ensuring a smooth and responsive experience 
-      for all users. The robust backend infrastructure is hosted on Hostinger, providing 
-      scalability and reliability to handle growing demand. By fostering transparency, 
-      support, and informed decision-making, this platform transforms the patient experience 
-      and contributes to the improvement of healthcare services.
-    `,
-    tags: [
-      {
-        name: "nextjs",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "typescript",
-        color: "green-text-gradient",
-      },
-      {
-        name: "nodejs",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "redis",
-        color: "pink-text-gradient"
-      },
-      {
-        name: "hostinger",
-        color: "green-text-gradient",
-      },
-      {
-        name: "express",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: [ patientPage ],
-    source_code_link: "https://github.com/AyobamiAjibola/ipatient.git",
-    web_link: "https://patientdotng.toverbers.com/",
     mobile_link: ""
   },
   {
