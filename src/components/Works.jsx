@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Tilt from "react-tilt";
 import { motion } from "framer-motion";
 
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation, Mousewheel, Keyboard } from "swiper/modules";
@@ -102,7 +102,7 @@ const ProjectCard = ({
 };
 
 const Works = () => {
-
+  const swiper = useSwiper();
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -125,36 +125,39 @@ const Works = () => {
       </div>
 
       <div className='mt-20'>
-
-          <Swiper
-            spaceBetween={20}
-            mousewheel={true}
-            keyboard={true}
-            cssMode={true}
-            navigation={true}
-            modules={[Navigation, Mousewheel, Keyboard]}
-            className="w-[100%] h-[auto]"
-            breakpoints={{
-              0: {
-                slidesPerView: 1,
-              },
-              640: {
-                slidesPerView: 2,
-              },
-              1024: {
-                slidesPerView: 3,
-              },
-            }}
-          >
-            {projects.map((project, index) => (
-              <SwiperSlide key={`swiper-slide-${index}`}>
-                <ProjectCard 
-                  key={`project-${index}`} 
-                  index={index} 
-                  {...project}
-                />
-              </SwiperSlide>
-            ))}
+        <Swiper
+          spaceBetween={20}
+          mousewheel={true}
+          keyboard={true}
+          navigation={{
+            prevEl: ".custom-prev",
+            nextEl: ".custom-next"
+          }}
+          cssMode={true}
+          navigation={true}
+          modules={[Navigation, Mousewheel, Keyboard]}
+          className="w-[100%] h-[auto]"
+          breakpoints={{
+            0: {
+              slidesPerView: 1,
+            },
+            640: {
+              slidesPerView: 2,
+            },
+            1024: {
+              slidesPerView: 3,
+            },
+          }}
+        >
+          {projects.map((project, index) => (
+            <SwiperSlide key={`swiper-slide-${index}`}>
+              <ProjectCard 
+                key={`project-${index}`} 
+                index={index} 
+                {...project}
+              />
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div> 
     </>
