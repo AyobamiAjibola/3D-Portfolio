@@ -570,52 +570,52 @@ const projects = [
     web_link: "https://app.talksharp.co",
     mobile_link: ""
   },
-  {
-    name: "Lé Fortifier Corp",
-    description: `
-     Lé Fortifier Corp is a software development company delivering scalable, client-facing SaaS solutions. As a Full Stack Developer, I contributed to the development of one of the company’s SaaS products designed to support core business workflows through reliable, user-friendly, and scalable features.
+//   {
+//     name: "Lé Fortifier Corp",
+//     description: `
+//      Lé Fortifier Corp is a software development company delivering scalable, client-facing SaaS solutions. As a Full Stack Developer, I contributed to the development of one of the company’s SaaS products designed to support core business workflows through reliable, user-friendly, and scalable features.
 
-I worked across both backend and frontend, building and integrating RESTful APIs with responsive frontend components to enable key customer activities such as data entry, record management, reporting, and day-to-day user interactions. The platform was developed using modern JavaScript frameworks, with a strong focus on smooth data flow, consistency, and a high-quality user experience.
+// I worked across both backend and frontend, building and integrating RESTful APIs with responsive frontend components to enable key customer activities such as data entry, record management, reporting, and day-to-day user interactions. The platform was developed using modern JavaScript frameworks, with a strong focus on smooth data flow, consistency, and a high-quality user experience.
 
-I collaborated closely with product managers and designers to translate early concepts and business requirements into well-defined technical solutions and refined user flows. Features were delivered incrementally across multiple releases by breaking down larger initiatives into clear milestones, proactively communicating progress, risks, and blockers to ensure timely delivery.
+// I collaborated closely with product managers and designers to translate early concepts and business requirements into well-defined technical solutions and refined user flows. Features were delivered incrementally across multiple releases by breaking down larger initiatives into clear milestones, proactively communicating progress, risks, and blockers to ensure timely delivery.
 
-The project followed structured Git-based workflows and CI/CD pipelines, supporting automated testing, reliable deployments, and consistent release quality as the product evolved.
-    `,
-    tags: [
-      {
-        name: "Javascript",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Typescript",
-        color: "green-text-gradient",
-      },
-      {
-        name: "NodeJS",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Postgres",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "ExpressJS",
-        color: "green-text-gradient",
-      },
-      {
-        name: "ReactJS",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "NextJS",
-        color: "blue-text-gradient",
-      }
-    ],
-    image: [ lefort_bg ],
-    source_code_link: "",
-    web_link: "",
-    mobile_link: ""
-  },
+// The project followed structured Git-based workflows and CI/CD pipelines, supporting automated testing, reliable deployments, and consistent release quality as the product evolved.
+//     `,
+//     tags: [
+//       {
+//         name: "Javascript",
+//         color: "green-text-gradient",
+//       },
+//       {
+//         name: "Typescript",
+//         color: "green-text-gradient",
+//       },
+//       {
+//         name: "NodeJS",
+//         color: "blue-text-gradient",
+//       },
+//       {
+//         name: "Postgres",
+//         color: "pink-text-gradient",
+//       },
+//       {
+//         name: "ExpressJS",
+//         color: "green-text-gradient",
+//       },
+//       {
+//         name: "ReactJS",
+//         color: "pink-text-gradient",
+//       },
+//       {
+//         name: "NextJS",
+//         color: "blue-text-gradient",
+//       }
+//     ],
+//     image: [ lefort_bg ],
+//     source_code_link: "",
+//     web_link: "",
+//     mobile_link: ""
+//   },
   {
     name: "StressShield - Stress Prediction App",
     description: `
